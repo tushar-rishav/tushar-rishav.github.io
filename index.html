@@ -103,6 +103,21 @@
 				stroke: #00aeef;
 			}
 		}
+		@-webkit-keyframes spin {
+			0% {
+				stroke: #00aeef
+			}
+			37.5% {
+				stroke: #ed1c24;
+			}
+			67.5% {
+				stroke: #f69f37;
+			}
+			100% {
+				stroke-dashoffset: -240;
+				stroke: #00aeef;
+			}
+		}
 
 		svg {
 			width: 100%;
@@ -116,6 +131,10 @@
 			stroke-dasharray: 0, 0, 50, 190;
 			stroke-dashoffset: 0;
 			stroke-linejoin: round;
+
+			-webkit-animation: spin 6.5s infinite linear;
+			-webkit-animation-delay:0.5s;
+			-webkit-animation-duration:3s;
 			animation: spin 6.5s infinite linear;
 			animation-delay:0.5s;
 			animation-duration:3s;
