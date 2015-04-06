@@ -1,0 +1,275 @@
+<!--
+boys & girls 
+check greater of boys and gals..
+ gre=(m>n)?m:n
+ (gre!)* (gre+1)pn
+
+m=3, n=3
+3! * 4!/1! =144
+2* * 3 ! =12
+
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+
+
+.buttons{
+
+	width: 50px;
+	padding-top: 5px;
+	background-color: #87DFCC;
+	border: 2px blue solid;
+	border-radius: 10px;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: red;
+	cursor: default;
+	float: right;
+
+}
+
+.times{
+	height: 45px;
+	width: 200px;
+	padding-top: 5px;
+	background-color: black;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 38px;
+	color: white;
+	position: relative;
+	left:7%;
+}
+
+</style>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<script>
+/*returns dom for given id */
+var dom=function(id){
+	return document.getElementById(id);
+}
+
+</script>
+
+</head>
+
+<body>
+	<div id="canvas" style="background-color:#D75873;position:relative;left:30%; width:50%;height:300px;text-align:center;" >
+		<div style="position:relative;top:30%;align:center;text-align:center;">
+		<span id="d0" style="font-size:80px;" ></span>
+		<span style="" id="op1" >
+			<i id= "o1" style="display:inline-block;" class="fa fa-plus fa-3x" style="margin:5px;position:relative;"></i>
+		 	<i id= "o2" style="display:none;" class="fa fa-minus fa-3x" style="margin:5px;position:relative;" ></i>
+		 	<i id= "o3" style="display:none;" class="fa fa-asterisk fa-3x" style="margin:5px;position:relative;" ></i> 
+		 	<i id= "o4" style="display:none;" class="fa fa-circle fa-1x" style="margin:5px;position:relative;"></i>
+		</span> 
+		<span id="d1"  style="font-size:80px;" ></span>
+		<span  style="" id="op2" >
+			<i id= "oo1"  style="display:inline-block;" class="fa fa-plus fa-3x" style="margin:5px;position:relative;"></i>
+		 	<i id= "oo2" style="display:none;" class="fa fa-minus fa-3x" style="margin:5px;position:relative;" ></i>
+		 	<i id= "oo3" style="display:none;" class="fa fa-asterisk fa-3x" style="margin:5px;position:relative;" ></i> 
+		 	<i id= "oo4"  style="display:none;" class="fa fa-circle fa-1x" style="margin:5px;position:relative;"></i>
+		</span>
+		<span id="d2"  style="font-size:80px;" ></span>
+		<span  style="" id="result" >
+			<i id= "tick"  class="fa fa-check fa-4x" style="margin:5px;position:relative;color:green;display:none;"></i>
+			<i id= "cross"  class="fa fa-close fa-4x" style="margin:5px;position:relative;color:red;display:none;"></i>
+		</span>
+		</div>
+	</div>
+ 	<div style="z-index:999;position:absolute;top:4%;left:5%;" >
+ 		<input type="number" class="times" id='a' value="" autofocus placeholder="A" min='10' max='999' maxlength='3' ><br>
+  		<input type="number" class="times" id='b' value="" placeholder="B" min='10' max='999' maxlength='3' >
+    	<div class="times" id="cal" style="cursor:pointer;margin-top:3%;" onclick="show()" >Check </div><br>	
+    	<div class="times" id="reset" style="cursor:pointer;" onclick="reset()" >Reset</div>
+	</div>
+	
+	<div style="text-align:center;position:relative;top:100px;">
+		 <i id= "plus" class="fa fa-plus fa-3x" style="margin:5px;position:relative;"></i>
+		 <i id= "minus" class="fa fa-minus fa-3x" style="margin:5px;position:relative;" ></i>
+		 <i id= "multi" class="fa fa-asterisk fa-3x" style="margin:5px;position:relative;" ></i> 
+		 <i id= "none" class="fa fa-circle fa-1x" style="margin:5px;position:relative;"></i><span>(null operator)</sapn>
+	</div>
+<footer style="position:absolute;bottom:0%;padding:5%;text-align:center;left:0%;background-color:rgb(46, 131, 157);color:black;width:90%;height:5%;">Stimulation to show if i get 'b' from 'a' if set of operators +,-,* are given.<br>
+Enter 10<=a<=999 and 10<=b<=999.<br>
+&copy Delta
+</footer>
+
+<script>
+	var flag1=1,flag2=1,flag3=1,d=0;
+	var opa1=[1,0,0,0],opa2=[1,0,0,0],inter;
+	
+	function show(){
+		d=0;
+		var input= dom("a");
+		var digits = (""+input.value).split(""); // exploded
+		
+		for(var i=0;i<digits.length;i++)
+			dom("d"+i).innerHTML=" ";
+		
+		
+		if(digits.length==2)
+			dom("op2").style.display="none";
+		else
+			dom("op2").style.display="inline-block";	
+		for(var i=0;i<digits.length;i++)
+			dom("d"+i).innerHTML=digits[i];
+		
+		 inter=  setInterval(animate,500);
+		 
+		
+	
+		
+	
+	}
+	
+	function animate(){
+	d++;
+		console.log(d);
+	if(!(flag1 %4)){
+		
+		
+			
+		for(var j=1;j<5;j++)
+			{
+				if(j==flag2)
+				 	{
+				 		dom("o"+flag2).style.display="inline-block";
+				 		opa1[j-1]=1;	// map
+				 	}
+				else
+					{
+						dom("o"+j).style.display="none";
+						opa1[j-1]=0;
+					}
+			}	
+		if(flag2<4)
+			flag2++;
+		else
+			flag2=1;
+		//console.log("opa1 is"+opa1);			
+		
+	}
+	
+	
+	flag1++;
+	
+	
+		for(var j=1;j<5;j++)
+			{
+				if(j==flag3)
+				 	{
+				 		dom("oo"+flag3).style.display="inline-block";
+				 		opa2[j-1]=1;
+				 	}
+				else
+					{
+						dom("oo"+j).style.display="none";
+						opa2[j-1]=0;
+					}	
+			}
+		//console.log("opa2 is"+opa2);
+		var bool=check();
+		
+		
+		if(bool)
+			{
+				clearInterval(inter);
+				dom("tick").style.display="inline-block";
+			}
+		if(flag3<4)
+			flag3++;
+		else
+			flag3=1;	
+	if(d>16)
+			{
+			 	clearInterval(inter);
+		 		alert("There is no way to obtain B from given A");
+		 		var cross=dom("cross");
+		 		cross.style.display="inline-block";
+		 	}
+	
+	}
+	
+	function check(){
+		
+		var i,pos1,pos2,sum1=0;
+		var input= dom("a");
+		var output= dom("b");
+		var digits = (""+input.value).split(""); // exploded
+		
+		for(i=0;i<3;i++)
+			digits[i]=parseInt(digits[i]);
+		
+		for(i=0;i<4;i++)
+			if(opa1[i])
+				{pos1=i;break;}
+		
+		if(digits.length>2)
+		{
+			for(i=0;i<4;i++)
+			if(opa2[i])
+				{pos2=i;break;}		
+		}		
+		switch(pos1){
+		case 0:
+				sum1=digits[0]+digits[1];//console.log("+ "+sum1);
+		break;
+		case 1:sum1=digits[0]-digits[1];//console.log("- "+sum1)
+		break;
+		case 2:sum1=digits[0]*digits[1];//console.log("* "+sum1)
+		break;
+		case 3:sum1=""+digits[0]+digits[1];
+				sum1=parseInt(sum1);
+				//console.log("dot "+sum1)
+		break;
+		
+		}
+		
+	if(digits.length>2)		
+		{		
+		
+		switch(pos2){
+		case 0:sum1+=digits[2]; //console.log("@+ "+sum1)
+		break;
+		case 1:sum1-=digits[2]; //console.log("@- "+sum1)
+		break;
+		case 2:sum1*=digits[2];//console.log("@* "+sum1)
+		break;
+		case 3:sum1+=digits[2]+""; //console.log("@dot "+sum1)
+				sum1=parseInt(sum1);
+		break;
+		
+		}
+		}
+		
+		if(sum1==output.value)
+			{
+				var tick=dom("tick");
+				clearInterval(inter);
+				tick.style.display="inline-block";
+			}				
+	
+	}
+	
+	function reset(){
+		
+		var input= dom("a");
+		var output= dom("b");
+		var digits = (""+input.value).split(""); // exploded
+		
+		for(var i=0;i<digits.length;i++)
+			dom("d"+i).innerHTML=" ";
+		clearInterval(inter);	
+			
+	}
+</script>
+
+ </body>
+</html>
+
+    	
