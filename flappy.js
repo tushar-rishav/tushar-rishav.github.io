@@ -619,30 +619,31 @@
   
 
 
-      var xmlhttp;
+      //var xmlhttp;
         function sbSk(sky)
         {    
-          if (window.XMLHttpRequest)
-            xmlhttp=new XMLHttpRequest();
+          skore.innerHTML="Score: "+sky;
+          // if (window.XMLHttpRequest)
+          //   xmlhttp=new XMLHttpRequest();
             
-          else
-            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); //for older IEs
+          // else
+          //   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP"); //for older IEs
 
 
 
-           xmlhttp.onreadystatechange=function()
-              {
-              if (xmlhttp.readyState==4 && xmlhttp.status==200) //requst finished nd response is ready
-                   skore.innerHTML="Score: "+sky//+xmlhttp.responseText;
+          //  xmlhttp.onreadystatechange=function()
+          //     {
+          //     if (xmlhttp.readyState==4 && xmlhttp.status==200) //requst finished nd response is ready
+          //          skore.innerHTML="Score: "+xmlhttp.responseText;
                         
                
               
 
-              }
+          //     }
 
-            xmlhttp.open("POST","sky.php",true);
-            xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-            xmlhttp.send("submitData="+sky);
+          //   xmlhttp.open("POST","sky.php",true);
+          //   xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+          //   xmlhttp.send("submitData="+sky);
               
 
 
