@@ -1,4 +1,3 @@
-<!-- Made during Festember'14 -->
 <!DOCTYPE html>
 
  
@@ -11,77 +10,63 @@
 	        <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8" />
 		<link href="MyFlappy.css" rel="stylesheet" />
 		<link rel="icon" href="images/icon.png"/>
+		<script>
+		var dom=function(id){
+			return document.getElementById("canvasBtn");
+		}
+		</script>
 	</head>
+
 	
 	<body>
-		<style> html{display:none;} </style>
-			<script>
-				if(self == top) {
-       					document.documentElement.style.display = 'block'; 
-   					} 
-   					else 
-    					top.location = self.location; 
-   						
-			</script>
+		<canvas id="canvasBtn" width="1300" height="600"></canvas>
+		<script>
 
-		<div id="top" >
-			<header>Choose your bird</header>
-			<hgroup>To control bird Use Spacebar</hgroup>
+			var btn=[],txt=['Delta','Flappy','Tackle'],wide=65,high=30;
+			var l=['delta_prototype/index.html','Flappy/index.html','Tackle/index.html'];
+			var swidth=screen.availWidth,sheight=screen.availHeight;;
+			console.log(swidth+" "+sheight);
+			for(var i=0;i<3;i+=1)
+				btn.push(new Button(((350+300*i)/1366)*swidth, sheight*(0.45),txt[i])); 
+			console.log(btn);
+			var canvy=dom("canvasBtn");
+			var ctx = canvy.getContext('2d');
+			ctx.fillStyle = "hsla(0, 0%, 0%, 0.5)";
+			ctx.font = "bold 20px Arial";
+			ctx.fillText("Made with <3 in Canvas!",((swidth*(0.43))/1366)*swidth,(0.7)*sheight);
+			ctx.fillText("The 101 items are actually clickable! :D ",((swidth*(0.38))/1366)*swidth,sheight/6);
 			
-			<ul>
-				
-				<li id="l2" onclick="start(2)" onmouseover="changeFlappyPos(2)" >Blue berry</li>
-				<li id="l3" onclick="start(3)" onmouseover="changeFlappyPos(3)" >Lill berry</li>
-				<li id="l4" onclick="start(4)" onmouseover="changeFlappyPos(4)" >Red berry</li>
-			</ul>
-			<img src="images/2.png" width="15%" height="40%" id="guide"></img>
+			function Button(xL,yT,msg) {            // creating our button object
+			    this.xLeft = xL;
+			    this.yTop = yT;
+			    this.msg=msg;
+			}
 
-		</div>	
-		 <section>
+			Button.prototype.checkClicked = function() {
+				console.log(this.xLeft+" "+mouseX+", "+this.yTop+" "+mouseY)
+			    if (this.xLeft <= mouseX && mouseX <= this.xLeft+wide && this.yTop-high/2 <= mouseY && mouseY <= this.yTop+high)
+				{	console.log("clicked perfectly inside");
+					return true;
+					
+				}
+			};
+			function seeIfMouseClicked(e){
+				console.log('clicked');
+			    mouseX = e.pageX - canvy.offsetLeft;          //get the position of mouse pointer wrt canvas area
+			    mouseY = e.pageY - canvy.offsetTop;
+			    for(var i=0;i<3;i+=1){
+			        if (btn[i].checkClicked()) 
+						location.href=l[i];
+				}
+			}
+			    
+			
+			for(var i=0;i<3;i+=1)
+				ctx.fillText(btn[i].msg,btn[i].xLeft,btn[i].yTop);
+			document.addEventListener('click', seeIfMouseClicked, false);
 
-			<canvas id="game_canvas"  ></canvas>  <!-- for background and score-->
-            		<canvas id="pipes_canvas"></canvas>
-			<canvas id="flappy_canvas" ></canvas>
-		 </section>
-
-		 <div id="pAgain" onclick="screwAgain()" >
-		 	Play again
-		 </div>
-		 <span id="score"></span>
-
-		 <div id="gOverWrapper">
-		 	<canvas id="gOver"></canvas>
-		 </div>
-		 
-		 <script>
-			 		 	im=document.getElementById("guide");
-			 		 	
-		 function changeFlappyPos(pos){
-		 	switch(pos)
-		 	{
-		 		case 2: im.style.top="15%";
-		 				document.getElementById("guide").src="images/"+pos+".png";
-		 				break;
-		 		case 3: im.style.top="34%";
-		 				document.getElementById("guide").src="images/"+pos+".png";
-		 				break;
-		 		case 4:im.style.top="55%";
-		 				document.getElementById("guide").src="images/"+pos+".png";
-		 				
-		 		
-		 				break;
-		 	}
-
-		 	
-
-		 }
-
-
-
-		 </script>
-		<script  src="flappy.js"></script>
-		
+		</script>
+	
 	</body>
 	
-
-</html>		
+</html>
