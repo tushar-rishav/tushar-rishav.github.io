@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 
- 
 <html>
 	<head>
-		<script>
-		document.title="Me";
-		</script>
-		
-	        <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8" />
-			<link rel="icon" href="images/icon.png"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8" />
+		<link rel="icon" href="images/icon.png"/>
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<script>
 		var dom=function(id){
-			return document.getElementById("canvasBtn");
+			return document.getElementById(id);
 		}
+			document.title="Me";
 		</script>
+		<style>
+		#link{
+			color:#006fa6;
+			z-index: 100;
+			display: block;
+			
+		}
+		body{
+			text-align: center;
+			background: black;
+
+		}
+		</style>
 	</head>
 
 	
 	<body>
 		<canvas id="canvasBtn" width="1300" height="600"></canvas>
+		
+		<a id="link" href="https://in.linkedin.com/in/tusharrishav"><i class="fa fa-2x fa-linkedin"></i></a>
+		
 		<script>
-
 			var btn=[],txt=['Delta','Flappy','Tackle'],wide=65,high=30;
 			var l=['delta_prototype/index.html','Flappy/index.html','Tackle/index.html'];
 			var swidth=screen.availWidth,sheight=screen.availHeight;;
-			console.log(swidth+" "+sheight);
+			console.log(swidth+" "+sheight+",");
 			for(var i=0;i<3;i+=1)
-				btn.push(new Button(((350+300*i)/1366)*swidth, sheight*(0.45),txt[i])); 
-			console.log(btn);
+				btn.push(new Button(((320+300*i)/1366)*swidth, sheight*(0.45),txt[i])); 
+			
 			var canvy=dom("canvasBtn");
 			var ctx = canvy.getContext('2d');
 			ctx.fillStyle = "hsla(0, 0%, 0%, 0.5)";
 			ctx.font = "bold 20px Arial";
-			ctx.fillText("Made with <3 in Canvas!",((swidth*(0.43))/1366)*swidth,(0.7)*sheight);
-			ctx.fillText("The 11 items are actually clickable! :D ",((swidth*(0.38))/1366)*swidth,sheight/6);
+			ctx.fillStyle = 'green';
+			ctx.fillText("Made with <3 in Canvas!",((swidth*(0.40))/1366)*swidth,(0.7)*sheight);
+			ctx.fillStyle = 'orange';
+			ctx.fillText("The 11 items are actually clickable! :D ",((swidth*(0.34))/1366)*swidth,sheight/6);
 			
 			function Button(xL,yT,msg) {            // creating our button object
 			    this.xLeft = xL;
@@ -59,12 +73,20 @@
 				}
 			}
 			    
-			
-			for(var i=0;i<3;i+=1)
+			ctx.fillStyle="white"
+			for(var i=0;i<3;i+=1){
+				if(i==1)
+					ctx.fillStyle="#006fa6";
+				else
+					ctx.fillStyle="white"
+
 				ctx.fillText(btn[i].msg,btn[i].xLeft,btn[i].yTop);
+			}
 			document.addEventListener('click', seeIfMouseClicked, false);
 
 		</script>
+		
+
 	
 	</body>
 	
