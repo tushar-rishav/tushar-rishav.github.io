@@ -1,104 +1,140 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8" />
-		<link rel="icon" href="images/icon.png"/>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<script>
-		var dom=function(id){
-			return document.getElementById(id);
-		}
-			document.title="Me";
-		</script>
-		<style>
-		.link{
-			color:gray;
-			z-index: 100;
-			/*display: block;*/
-			
-		}
-		.fa-linkedin:hover{
-			color:#006fa6;
-		}
-		.fa-github-alt:hover{
-			color:white;
-		}
-		.fa-stack-overflow:hover{
-			color: #F6902C;
-		}
-		body{
-			text-align: center;
-			background: black;
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tushar Gautam</title>
+		<meta name="description" content="About Tushar Gautam" />
+		<meta name="keywords" content="About, Tushar Gautam, Delta, NIT Trichy, Programming, tushar-rishav" />
+		<meta name="author" content="tushar" />
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/null.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
+		<script src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script type="text/javascript">
 
-		}
-		</style>
+		$(document).ready(function() {
+			$('#container').fullpage({
+
+				anchors: ['intro', 'who','love','work','contact'],
+				menu: '#menu',
+				scrollingSpeed: 800
+			});
+		});
+
+		</script>
+
+		<script src="js/snap.svg-min.js"></script>
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 	</head>
+	<body class="theme-1">
+		<div  id="container" >
+			<nav id="menu" class="menu">
+				<button class="menu__handle"><span style="color:white;">Menu</span></button>
+				<div class="menu__inner">
+					<ul>
+						<li data-menuanchor="intro" ><a href="#intro"><i class="fa fa-home "></i><span>INTRODUCTION<span></a></li>
+						<li data-menuanchor="who" ><a href="#who"><i class="fa fa-user "></i><span>WHO I AM<span></a></li>
+						<li data-menuanchor="love" ><a href="#love"><i class="fa fa-code "></i><span>WHAT I LOVE TO DO<span></a></li>
+						<li data-menuanchor="work" ><a href="#work"><i class="fa fa-archive "></i><span>WHAT I'VE DONE<span></a></li>
+						<li data-menuanchor="contact" ><a href="#contact"><i class="fa  fa-send "></i><span>CONTACT<span></a></li>
+					</ul>
+				</div>
+				<div class="morph-shape" data-morph-open="M300-10c0,0,295,164,295,410c0,232-295,410-295,410" data-morph-close="M300-10C300-10,5,154,5,400c0,232,295,410,295,410">
+					<svg stroke="#C1D07B" width="100%" height="100%" viewBox="0 0 600 800" preserveAspectRatio="none">
+						<defs>	<!-- My own strokes -->
+						    <style type="text/css"><![CDATA[
+						       #MyLine {
+						         stroke: #C1D07B;
+						         fill: none;
+						       }
+						    ]]></style>
+						</defs>
+						<path id="MyLine" d="M300-10c0,0,0,164,0,410c0,232,0,410,0,410"/>
+					</svg>
+				</div>
+			</nav>
+			
+			<div class="main intro section"  data-anchor="intro">
+				Intro. ( Visit few hours later :p )
+			</div>
+			<div class="main who section" data-anchor="who" >
+				Who
+			</div>
+			<div class="main love section" data-anchor="love" >
+				Love
+			</div>
+			<div class="main work section" data-anchor="work" >
+				Work
+			</div>
+			<div class="main contact section" data-anchor="contact" >
+				Contact
+			</div>
 
-	
-	<body>
-		<canvas id="canvasBtn" width="1300" height="600"></canvas>
-		<footer style="text-align:center;">
-		<a class="link" style="display:inline;padding:10px;" href="https://in.linkedin.com/in/tusharrishav"><i class="fa fa-2x fa-linkedin"></i></a>
-		<a class="link"  href="https://github.com/tushar-rishav" ><i class="fa fa-2x fa-github-alt"></i></a>
-		&nbsp;<a class="link"  href="http://stackoverflow.com/users/3673031/tushar-gautam?tab=profile" ><i class="fa fa-2x fa-stack-overflow"></i></a>
-		</footer>
+
+		</div>
+		<script src="js/classie.js"></script>
 		<script>
-			var btn=[],txt=['Delta','Flappy','Tackle'],wide=65,high=30;
-			var l=['#','Flappy/index.html','#'];
-			var swidth=screen.availWidth,sheight=screen.availHeight;;
-			console.log(swidth+" "+sheight+",");
-			for(var i=0;i<3;i+=1)
-				btn.push(new Button(((320+300*i)/1366)*swidth, sheight*(0.45),txt[i])); 
-			
-			var canvy=dom("canvasBtn");
-			var ctx = canvy.getContext('2d');
-			ctx.fillStyle = "hsla(0, 0%, 0%, 0.5)";
-			ctx.font = "bold 20px Arial";
-			ctx.fillStyle = 'green';
-			ctx.fillText("Made with <3 in Canvas!",((swidth*(0.40))/1366)*swidth,(0.7)*sheight);
-			ctx.fillStyle = 'orange';
-			ctx.fillText("The 11 items are actually clickable! :D ",((swidth*(0.34))/1366)*swidth,sheight/6);
-			
-			function Button(xL,yT,msg) {            // creating our button object
-			    this.xLeft = xL;
-			    this.yTop = yT;
-			    this.msg=msg;
-			}
+			(function() {
 
-			Button.prototype.checkClicked = function() {
-				console.log(this.xLeft+" "+mouseX+", "+this.yTop+" "+mouseY)
-			    if (this.xLeft <= mouseX && mouseX <= this.xLeft+wide && this.yTop-high/2 <= mouseY && mouseY <= this.yTop+high)
-				{	console.log("clicked perfectly inside");
-					return true;
+				function SVGMenu( el, options ) {
+					this.el = el;
+					this.init();
+				}
+
+				SVGMenu.prototype.init = function() {
+					this.trigger = this.el.querySelector( 'button.menu__handle' );
+					this.shapeEl = this.el.querySelector( 'div.morph-shape' );
+
+					var s = Snap( this.shapeEl.querySelector( 'svg' ) );
+					this.pathEl = s.select( 'path' );
+					this.paths = {
+						reset : this.pathEl.attr( 'd' ),
+						open : this.shapeEl.getAttribute( 'data-morph-open' ),
+						close : this.shapeEl.getAttribute( 'data-morph-close' )
+					};
+
+					this.isOpen = false;
+
+					this.initEvents();
+				};
+
+				SVGMenu.prototype.initEvents = function() {
+					this.trigger.addEventListener( 'click', this.toggle.bind(this) );
+				};
+
+				SVGMenu.prototype.toggle = function() {
+					var self = this;
+
+					if( this.isOpen ) {
+						classie.remove( self.el, 'menu--anim' );
+						setTimeout( function() { classie.remove( self.el, 'menu--open' );	}, 250 );
+					}
+					else {
+						classie.add( self.el, 'menu--anim' );
+						setTimeout( function() { classie.add( self.el, 'menu--open' );	}, 250 );
+					}
+					this.pathEl.stop().animate( { 'path' : this.isOpen ? this.paths.close : this.paths.open }, 350, mina.easeout, function() {
+						self.pathEl.stop().animate( { 'path' : self.paths.reset }, 800, mina.elastic );
+					} );
 					
-				}
-			};
-			function seeIfMouseClicked(e){
-				console.log('clicked');
-			    mouseX = e.pageX - canvy.offsetLeft;          //get the position of mouse pointer wrt canvas area
-			    mouseY = e.pageY - canvy.offsetTop;
-			    for(var i=0;i<3;i+=1){
-			        if (btn[i].checkClicked()) 
-						location.href=l[i];
-				}
-			}
-			    
-			ctx.fillStyle="white"
-			for(var i=0;i<3;i+=1){
-				if(i==1)
-					ctx.fillStyle="#006fa6";
-				else
-					ctx.fillStyle="white"
+					this.isOpen = !this.isOpen;
+				};
 
-				ctx.fillText(btn[i].msg,btn[i].xLeft,btn[i].yTop);
-			}
-			document.addEventListener('click', seeIfMouseClicked, false);
+				new SVGMenu( document.getElementById( 'menu' ) );
 
+			})();
 		</script>
-		
-
-	
 	</body>
-	
 </html>
