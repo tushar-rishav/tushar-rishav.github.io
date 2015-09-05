@@ -8,16 +8,14 @@
 		<meta name="description" content="About Tushar Gautam" />
 		<meta name="keywords" content="About, Tushar Gautam, Delta, NIT Trichy, Programming, tushar-rishav" />
 		<meta name="author" content="tushar" />
+		<link rel="stylesheet" type="text/css" href="css/progress.css" />
 		<link rel="shortcut icon" href="img/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/null.css" />
 		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		-->
+		<link rel="stylesheet" type="text/css" href="css/null.css" />
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
 		<script src="js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript">
@@ -27,18 +25,24 @@
 
 				anchors: ['intro', 'who','love','work','contact'],
 				menu: '#menu',
-				scrollingSpeed: 800
+				scrollingSpeed: 800,
+				scrollBar: true
 			});
 		});
 
 		</script>
 
 		<script src="js/snap.svg-min.js"></script>
-		<!--[if IE]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<script src="js/progress_bar.js"></script>
 	</head>
-	<body class="theme-1">
+	<body >
+
+		<progress value="0" min="0" class="multiple" id="progressBar">
+			<!-- For older browsers -->
+		  <div class="progress-container">
+		    <span class="progress-bar"></span>
+		  </div>
+		</progress>
 		<div  id="container" >
 			<nav id="menu" class="menu">
 				<button class="menu__handle"><span style="color:white;">Menu</span></button>
@@ -65,7 +69,6 @@
 					</svg>
 				</div>
 			</nav>
-			
 			<div class="main intro section"  data-anchor="intro">
 				Intro. ( Visit few hours later :p )
 			</div>
@@ -82,7 +85,7 @@
 				Contact
 			</div>
 
-
+			
 		</div>
 		<script src="js/classie.js"></script>
 		<script>
@@ -136,5 +139,7 @@
 
 			})();
 		</script>
+		
+		
 	</body>
 </html>
