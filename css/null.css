@@ -19,3 +19,7 @@ a:focus {
 	color: #afb3b8;
 	outline: none;
 }
+::-webkit-scrollbar {
+    width: 12px;
+    display: none;
+}

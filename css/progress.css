@@ -12,11 +12,11 @@ progress {
      -moz-appearance: none;
           appearance: none;
   border: none;
-  background-color: transparent;
+  backgroundr: transparent;
 
 }
 progress::-webkit-progress-bar {
-  background-color: #eee;
+  background: transparent;
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
@@ -24,7 +24,7 @@ progress::-webkit-progress-value {
   background-image: -webkit-linear-gradient(-45deg, 
                              transparent 33%, rgba(0, 0, 0, .1) 33%, 
                              rgba(0,0, 0, .1) 66%, transparent 66%),
-                    -webkit-linear-gradient(left, green, red);
+                    -webkit-linear-gradient(left, rgb(203, 208, 123), rgb(174, 220, 31));
 
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -33,7 +33,7 @@ progress::-moz-progress-bar {
   background-image: -moz-linear-gradient(-45deg, 
                              transparent 33%, rgba(0, 0, 0, .1) 33%, 
                              rgba(0,0, 0, .1) 66%, transparent 66%),
-                    -moz-linear-gradient(left, green, red);
+                    -moz-linear-gradient(left, rgb(203, 208, 123), rgb(174, 220, 31));
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
@@ -41,7 +41,7 @@ progress::-moz-progress-value {
   background-image: -moz-linear-gradient(-45deg, 
                              transparent 33%, rgba(0, 0, 0, .1) 33%, 
                              rgba(0,0, 0, .1) 66%, transparent 66%),
-                    -moz-linear-gradient(left, green, red);
+                    -moz-linear-gradient(left, rgb(203, 208, 123), rgb(174, 220, 31));
 
     border-radius: 2px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -61,7 +61,7 @@ progress::-moz-progress-value {
 }
 
 .progress-bar {
-  background-color: red;
+  background-color: transparent;
   width: 50%;
   display: block;
   height: inherit;

@@ -1,0 +1,48 @@
+*{text-align: center;color: white;}
+.fa-facebook{
+	color:gray;
+}
+.fa-github{
+	color: gray;
+}
+.fa-stack-overflow{
+	color:gray;
+}
+.fa-facebook:hover{
+	color:#3a5795;
+}
+.fa-github:hover{
+	color: green;
+}
+.fa-stack-overflow:hover{
+	color:#c98b3b;
+}
+li{
+	margin: 10px;
+	text-align: center;
+	padding: 0px !important;
+}
+.title{
+	color:#5CA69C;
+}
+.content{
+	color:gray;
+}
+.link{
+	color:green;
+}
+.container{
+	background: rgb(55, 51, 51);
+	text-align: center;
+	height: 100%;
+
+}
+.social li{
+	
+	display: inline;
+}
+header{
+	color:#5CA69C;
+	font-size: 2em;
+	margin-bottom: 10px;
+}
