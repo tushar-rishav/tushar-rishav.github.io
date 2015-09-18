@@ -46,3 +46,21 @@ header{
 	font-size: 2em;
 	margin-bottom: 10px;
 }
+.form-group{text-align: center;}
+.search{
+	color:#5CA69C;
+	background: transparent;
+	border: solid;
+	width: 20%;
+	padding: 1%;
+	border-color: transparent;
+	-webkit-transition: border-color 0.6s;
+    transition: border-color 0.6s;
+}
+.search:focus{
+	background: rgba(55, 51, 51, 0.36);
+	border-color: #5CA69C;
+}
+.pagination{
+	margin: 2.5%;
+}

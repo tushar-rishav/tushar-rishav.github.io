@@ -11,7 +11,37 @@
 	}, 
 	{
 		"title": "Python Decorators",
-		"exerpt": "Decorators are wow!",
+		"exerpt": "Much wow!!",
+		"content": "Yet to write"
+	},
+	{
+		"title": "Collections in Python",
+		"exerpt": "Collections save as all!",
+		"content": "Yet to write"
+	},
+	{
+		"title": "Metaclass in Python",
+		"exerpt": "Now that is something!",
+		"content": "Yet to write"
+	},
+	{
+		"title": "Argparse in simple terms",
+		"exerpt": "This is python!",
+		"content": "Yet to write"
+	},
+	{
+		"title": "Garbage collector",
+		"exerpt": "Much wow!",
+		"content": "Yet to write"
+	},
+	{
+		"title": "Functional programming in Python",
+		"exerpt": "This is real python!",
+		"content": "Yet to write"
+	},
+	{
+		"title": "Bit manipulation",
+		"exerpt": "Feel its power!",
 		"content": "Yet to write"
 	}
 ]
