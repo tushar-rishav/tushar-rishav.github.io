@@ -1,0 +1,54 @@
+.center{
+	text-align: center;
+}
+
+.vintage_content {
+    font-family: "Courier",fixed,monospace;
+    white-space: pre-wrap;
+    text-shadow: 0 0 3px;
+    text-transform: uppercase;
+    opacity: .95;
+    background: transparent;
+    width: 100%;
+}
+#welcome_first{
+	padding: 1%;
+	font-size:35px;
+	background: rgba(181, 180, 177, 0.32);
+}
+#welcome_second{
+	font-size:25px;
+	padding: 1%;
+	position: relative;
+	top:5%;
+	display: inline-block;
+}
+.fa-code{
+	color:khaki;
+}
+.typed-cursor{
+	font-weight: 500;
+}
+.me{
+	width:20%;
+	height: 40%;
+	border: 0px;
+	border-radius: 40%;
+	display: inline;
+}
+.intro{
+	background-image: url('../img/cricket.png');
+	background-size: cover;
+}
+
+.who{
+	background-image: url("../img/cover.png");background-size: cover;
+	
+}
+.who a{
+	color:rgba(243, 249, 122, 1);
+	font-weight: 600;
+
+}
+.
+
