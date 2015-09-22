@@ -78,6 +78,7 @@
 .menu ul li a {
 	display: block;
 	outline: none;
+	text-decoration: none;
 }
 
 .menu ul li .fa {

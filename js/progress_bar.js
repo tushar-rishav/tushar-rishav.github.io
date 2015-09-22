@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     var getMax = function(){
-        console.log($(document).height()+","+$(window).height());
+        //console.log($(document).height()+","+$(window).height());
         return ($(document).height() - $(window).height());
     }
     
@@ -10,7 +10,7 @@ $(document).ready(function(){
     }
     
     if('max' in document.createElement('progress')){
-        // Browser supports progress element
+        // Those browser which supports progress element
         var progressBar = $('progress');
         
         // Set the Max attr for the first time
@@ -22,7 +22,6 @@ $(document).ready(function(){
         });
       
         $(window).resize(function(){
-            // On resize, both Max/Value attr needs to be calculated
             progressBar.attr({ max: getMax(), value: getValue() });
         });   
     }
@@ -33,7 +32,7 @@ $(document).ready(function(){
             value, width;
         
         var getWidth = function(){
-            // Calculating width in percentage
+            // Get the width in percentage
             value = getValue();            
             width = (value/max) * 100;
             width = width + '%';

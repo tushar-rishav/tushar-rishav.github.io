@@ -37,6 +37,7 @@ a:focus {
 	-o-animation: blink 0.7s infinite;
 	animation: blink 0.7s infinite;
 }
+
 @-keyframes blink{
 	0% { opacity:1; }
 	50% { opacity:0; }

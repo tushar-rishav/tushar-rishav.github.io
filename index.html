@@ -9,7 +9,7 @@
 		<meta name="keywords" content="About, Tushar Gautam, Delta, NIT Trichy, Programming, tushar-rishav" />
 		<meta name="author" content="tushar" />
 		<link rel="shortcut icon" href="img/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/progress.css" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -27,14 +27,14 @@
 			// </> for welcome note goes here
 			$(document).ready(function() {
 				$('#container').fullpage({
-					anchors: ['intro', 'who','love','work','contact'],
+					anchors: ['intro', 'who','work','contact'],
 					menu: '#menu',
 					scrollingSpeed: 800,
 					scrollBar: true
 				});
 
 				$("#welcome").typed({
-					strings: ["<span id='welcome_first'>Hi! I am Tushar.^1000 glad to see you here! <i class='fa fa-smile-o' ></i></span> <br/><div id='welcome_second'>Two things in life i am crazy about : <br>1. Write <i class='fa fa-code' ></i> to build stuffs that matter and.. <br/>2. ^1000Bowl a yorker!! <i class='fa fa-smile-o' ></i></div> "
+					strings: ["<span id='welcome_first'>Hi! I am Tushar.^1000 Good to see you! <i class='fa fa-smile-o' ></i></span> <br/><div id='welcome_second'>Two things in life i am crazy about : <br>1. Write <i class='fa fa-code' ></i> to build stuffs that matter and.. <br/>2. ^1000Bowl a yorker!! <i class='fa fa-smile-o' ></i></div> "
 					],
 					typeSpeed: 30,
 					backDelay: 500,
@@ -44,6 +44,25 @@
 					showCursor: true,
 					cursorChar: "|"
 				});
+
+				$("#code_lang").typed({
+					strings: ["Python","C++","Javascript","CoffeeScript","AngularJS","Rails","PHP","Dart","GNU Octave","Clojure"],
+					typeSpeed: 30,
+					startDelay: 3,
+					backDelay: 1000,
+					loop: true,
+					contentType: 'html', // or text
+					loopCount: false,
+					showCursor: true,
+					cursorChar: "|"
+				});
+
+				$("#mini_nav_handle").click(function(){
+			    $("#mini_nav_tab").animate({
+			      height:'toggle'
+			    });
+			    });
+    
 				
 			});
 
@@ -60,14 +79,25 @@
 		  </div>
 		</progress>
 		<div id="container" >
+			<div class="mini_nav"> 
+			<span id="mini_nav_handle"><i style="color:#808350;" class="fa fa-2x fa-navicon"></i></span>
+			<nav id="mini_nav_tab">
+					<ul class="nav nav-tabs center">
+						<li data-menuanchor="intro" ><a href="#intro"><i class="fa fa-home "></i><span>INTRODUCTION<span></a></li>
+						<li data-menuanchor="who" ><a href="#who"><i class="fa fa-user "></i><span>WHO I AM<span></a></li>
+						<li data-menuanchor="work" ><a href="#work"><i class="fa fa-code "></i><span>WHAT I'VE DONE<span></a></li>
+						<li data-menuanchor="blog" ><a href="blog/"><i class="fa  fa-book "></i><span>BLOG<span></a></li>
+						<li data-menuanchor="contact" ><a href="#contact"><i class="fa  fa-send "></i><span>CONTACT<span></a></li>
+					</ul>
+			</nav>
+			</div>	
 			<nav id="menu" class="menu">
 				<button class="menu__handle"><span style="color:white;">Menu</span></button>
 				<div class="menu__inner">
 					<ul>
 						<li data-menuanchor="intro" ><a href="#intro"><i class="fa fa-home "></i><span>INTRODUCTION<span></a></li>
 						<li data-menuanchor="who" ><a href="#who"><i class="fa fa-user "></i><span>WHO I AM<span></a></li>
-						<li data-menuanchor="love" ><a href="#love"><i class="fa fa-code "></i><span>WHAT I LOVE TO DO<span></a></li>
-						<li data-menuanchor="work" ><a href="#work"><i class="fa fa-archive "></i><span>WHAT I'VE DONE<span></a></li>
+						<li data-menuanchor="work" ><a href="#work"><i class="fa fa-code "></i><span>WHAT I'VE DONE<span></a></li>
 						<li data-menuanchor="blog" ><a href="blog/"><i class="fa  fa-book "></i><span>BLOG<span></a></li>
 						<li data-menuanchor="contact" ><a href="#contact"><i class="fa  fa-send "></i><span>CONTACT<span></a></li>
 					</ul>
@@ -90,27 +120,42 @@
 			
 			<!-- Me in short -->
 			<div class="main intro section" data-anchor="intro">
-				<div class="vintage_content" ><span id="welcome"></span><i class="typed-cursor" ></i></div>
+				<div class="vintage_content" >
+					<span id="welcome"></span><i class="typed-cursor" ></i>
+				</div>
 			</div>
 			<!-- Me in long-->
 			<div class="main who section " data-anchor="who"  >
-				<img src="img/me.jpg" class="img img-responsive me">
+				<div class="my_pic" ><img src="img/me.jpg" class="img img-responsive me"></div>
 				<div class="container" >
-					<p data-sr="enter bottom move 30px over 1s reset" >I'm a third year student studying at the <a target="_blank" href="http://www.nitt.edu/">National Institute of Technology - Trichy</a> pursuing B.Tech in <a href="http://www.nitt.edu/home/academics/departments/prod/" target="_blank">Production Engineering</a>
-					but I devote most of my time learning and building cool stuffs.
+					<p data-sr="enter bottom move 35px over 1s" >I'm a third year student studying at the <a target="_blank" href="http://www.nitt.edu/">National Institute of Technology - Trichy</a> pursuing B.Tech in <a href="http://www.nitt.edu/home/academics/departments/prod/" target="_blank">Production Engineering</a>
+					but I devote most of my time learning and developing cool stuffs.
 					</p>
-					<p>I'm a web developer in <a href="http://delta.nitt.edu/" target="_blank">Delta Force</a> the central webteam of NIT-T.</p>
-					<p>I practice and participate in programming contests at <a href="https://www.hackerrank.com/tushar_rishav" target="_blank">Hackerrank</a> and <a href="http://codeforces.com/profile/tushar_rishav" target="_blank">Codeforces</a>. Beside, I also maintain and make contributions to various open source projects at <a href="https://github.com/tushar-rishav">Github</a> </p>
+					<p data-sr='enter left move 30px over 1s' >I'm a web developer in <a href="http://delta.nitt.edu/" target="_blank">Delta Force</a> the central webteam of NIT Trichy.</p>
+					<p data-sr='enter top move 35px over 1s' >I love and use Python to craft web and console apps.</p>
+					<p data-sr='enter top move 35px over 1s' >So far, I've written code in <span id="code_lang"></span><i class="typed-cursor" ></i></p>
+					<p data-sr='enter top move 35px over 1s' >You can catch me here at <a href="https://github.com/tushar-rishav">Github</a> </p>
 				</div>
 			</div>
-			<div class="main love section" data-anchor="love" >
-				<p>Love</p>
-			</div>
-			<div class="main work section" data-anchor="work" >
-				<p>Work</p>
-			</div>
+			<!-- What i've done -->
+			<div class="main work section" data-anchor="work" ></div>
+
+			<!-- Contacts -->
 			<div class="main contact section" data-anchor="contact" >
-				<p>Contact</p>
+				<h1 data-sr='enter top move 35px over 1s' class="py_love" > Et tu Python amare?</h1>
+				<div class="ping_wrapper">
+					<p data-sr='enter bottom move 35px over 1s' >Either way, if you want to say just hello or have an idea and want to collaborate to build some cool stuffs ,</p> 
+					<p data-sr='enter bottom move 35px over 1s' >feel free to <a data-sr='enter right move 35px over 1s' class="ping_me" href="mailto:tushar.rishav@gmail.com"  >ping me<i class="fa fa-commenting" ></i></a></p>
+					<p data-sr='enter bottom move 35px over 1s' >Want to know more about this social being? Stalk me here</p>
+					<div class="social_wrapper">
+						<span class="social" ><a href="https://plus.google.com/112857212849998453548/posts" ><i class="fa fa-2x fa-google-plus-square"></i></a></span>
+						<span class="social" ><a href="https://www.facebook.com/tushar.rishav" ><i class="fa fa-2x fa-facebook-square"></i></a></span>
+						<span class="social" ><a href="https://in.linkedin.com/in/tusharrishav" ><i class="fa fa-2x fa-linkedin-square"></i></a></span>
+						<span class="social" ><a href="https://twitter.com/tushar_rishav" ><i class="fa fa-2x fa-twitter-square"></i></a></span>
+						<span class="social" ><a href="http://stackoverflow.com/users/3673031/tushar-gautam" ><i class="fa fa-2x fa-stack-overflow"></i></a></span>
+						<span class="social" ><a href="https://github.com/tushar-rishav" ><i class="fa fa-2x fa-github-square"></i></a></span>
+					</div>
+				</div>
 			</div>
 
 			
@@ -119,9 +164,13 @@
 		<script src="js/svg_func.js"></script>
 		<script src="js/scrollReveal.min.js"></script>
 		<script type="text/javascript">
-			window.sr = new scrollReveal();
+			var config = {
+		        vFactor: 0.95,
+		        mobile: false,
+		        reset: true
+			 }
+			window.sr = new scrollReveal(config);
 		</script>
-
 		
 		
 	</body>
