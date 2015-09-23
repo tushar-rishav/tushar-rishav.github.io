@@ -9,8 +9,8 @@
 		<meta name="keywords" content="About, Tushar Gautam, Delta, NIT Trichy, Programming, tushar-rishav" />
 		<meta name="author" content="tushar" />
 		<link rel="shortcut icon" href="img/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/progress.css" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
@@ -22,22 +22,23 @@
 		<script src="js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="js/typed.js" ></script>
-		
+		<script src="js/Chart.min.js"></script>
 		<script type="text/javascript">
 			// </> for welcome note goes here
 			$(document).ready(function() {
 				$('#container').fullpage({
-					anchors: ['intro', 'who','work','contact'],
+					anchors: ['intro', 'who','love','work','contact'],
 					menu: '#menu',
 					scrollingSpeed: 800,
 					scrollBar: true
+					
 				});
 
 				$("#welcome").typed({
-					strings: ["<span id='welcome_first'>Hi! I am Tushar.^1000 Good to see you! <i class='fa fa-smile-o' ></i></span> <br/><div id='welcome_second'>Two things in life i am crazy about : <br>1. Write <i class='fa fa-code' ></i> to build stuffs that matter and.. <br/>2. ^1000Bowl a yorker!! <i class='fa fa-smile-o' ></i></div> "
+					strings: ["<span id='welcome_first'>Hi! I am Tushar.^900 Good to see you! <i class='fa fa-smile-o' ></i></span> <br/><div id='welcome_second'>Two things in life i am crazy about : <br>1. Write <i class='fa fa-code' ></i> to build stuffs that matter and.. <br/>2. ^800Bowl a yorker!! <i class='fa fa-smile-o' ></i></div> "
 					],
 					typeSpeed: 30,
-					backDelay: 500,
+					backDelay: 300,
 					loop: false,
 					contentType: 'html', // or text
 					loopCount: false,
@@ -85,9 +86,11 @@
 					<ul class="nav nav-tabs center">
 						<li data-menuanchor="intro" ><a href="#intro"><i class="fa fa-home "></i><span>INTRODUCTION<span></a></li>
 						<li data-menuanchor="who" ><a href="#who"><i class="fa fa-user "></i><span>WHO I AM<span></a></li>
+						<li data-menuanchor="love" ><a href="#love"><i class="fa fa-heart "></i><span>WHAT I LOVE TO DO<span></a></li>
 						<li data-menuanchor="work" ><a href="#work"><i class="fa fa-code "></i><span>WHAT I'VE DONE<span></a></li>
 						<li data-menuanchor="blog" ><a href="blog/"><i class="fa  fa-book "></i><span>BLOG<span></a></li>
 						<li data-menuanchor="contact" ><a href="#contact"><i class="fa  fa-send "></i><span>CONTACT<span></a></li>
+						
 					</ul>
 			</nav>
 			</div>	
@@ -97,6 +100,7 @@
 					<ul>
 						<li data-menuanchor="intro" ><a href="#intro"><i class="fa fa-home "></i><span>INTRODUCTION<span></a></li>
 						<li data-menuanchor="who" ><a href="#who"><i class="fa fa-user "></i><span>WHO I AM<span></a></li>
+						<li data-menuanchor="love" ><a href="#love"><i class="fa fa-heart "></i><span>WHAT I LOVE TO DO<span></a></li>
 						<li data-menuanchor="work" ><a href="#work"><i class="fa fa-code "></i><span>WHAT I'VE DONE<span></a></li>
 						<li data-menuanchor="blog" ><a href="blog/"><i class="fa  fa-book "></i><span>BLOG<span></a></li>
 						<li data-menuanchor="contact" ><a href="#contact"><i class="fa  fa-send "></i><span>CONTACT<span></a></li>
@@ -120,32 +124,153 @@
 			
 			<!-- Me in short -->
 			<div class="main intro section" data-anchor="intro">
+			<div class="small_screen">
 				<div class="vintage_content" >
 					<span id="welcome"></span><i class="typed-cursor" ></i>
 				</div>
 			</div>
+			</div>
 			<!-- Me in long-->
 			<div class="main who section " data-anchor="who"  >
-				<div class="my_pic" ><img src="img/me.jpg" class="img img-responsive me"></div>
-				<div class="container" >
-					<p data-sr="enter bottom move 35px over 1s" >I'm a third year student studying at the <a target="_blank" href="http://www.nitt.edu/">National Institute of Technology - Trichy</a> pursuing B.Tech in <a href="http://www.nitt.edu/home/academics/departments/prod/" target="_blank">Production Engineering</a>
-					but I devote most of my time learning and developing cool stuffs.
-					</p>
-					<p data-sr='enter left move 30px over 1s' >I'm a web developer in <a href="http://delta.nitt.edu/" target="_blank">Delta Force</a> the central webteam of NIT Trichy.</p>
-					<p data-sr='enter top move 35px over 1s' >I love and use Python to craft web and console apps.</p>
-					<p data-sr='enter top move 35px over 1s' >So far, I've written code in <span id="code_lang"></span><i class="typed-cursor" ></i></p>
-					<p data-sr='enter top move 35px over 1s' >You can catch me here at <a href="https://github.com/tushar-rishav">Github</a> </p>
+				<div class="small_screen">
+					<div class="my_pic" ><img src="img/me.jpg" class="img img-responsive me"></div>
+					<div class="container" >
+						<p data-sr="enter bottom move 35px over 1s" >I'm a third year student studying at the <a target="_blank" href="http://www.nitt.edu/">National Institute of Technology - Trichy</a> pursuing B.Tech in <a href="http://www.nitt.edu/home/academics/departments/prod/" target="_blank">Production Engineering</a>
+						but I devote most of my time learning and developing cool stuffs.
+						</p>
+						<p data-sr='enter left move 30px over 1s' >I'm a web developer in <a href="http://delta.nitt.edu/" target="_blank">Delta Force</a> the central webteam of NIT Trichy.</p>
+						<p data-sr='enter top move 35px over 1s' >I love and use Python to craft web and console apps.</p>
+						<p data-sr='enter top move 35px over 1s' >So far, I've written code in <span id="code_lang"></span><i class="typed-cursor" ></i></p>
+						<p data-sr='enter top move 35px over 1s' >You can catch me here at <a href="https://github.com/tushar-rishav">Github</a> </p>
+					</div>
 				</div>
 			</div>
+			<!-- What i love -->
+			<div class="love section fp-auto-height" data-anchor="love" >
+				<div class="skill_wrap" id="canv_wrap">
+					<h1 class="ribbon">
+						   <strong class="ribbon-content">My Skills</strong>
+					</h1>
+					<canvas data-sr='enter left move 100px over 1s' id="mySkill" width="400" height="300"></canvas>
+				</div>
+			</div>
+			
 			<!-- What i've done -->
-			<div class="main work section" data-anchor="work" ></div>
+			<div class="main work section" data-anchor="work" >
+			<h1 class="ribbon">
+			   <strong class="ribbon-content">
+			   		<span>Recent Projects</span>
+			   		<a href="https://github.com/tushar-rishav" class="high" title="More Projects" style="float:left;text-decoration:none;" >&nbsp;<i class="fa fa-2x fa-github"></i></a>
+			   	</strong>
+			</h1>
+				<div class="mini_pro">
+					<div class="slide">
+						<div data-sr='enter top move 60px over 1s'  class="proj_inner mini_proj_slide">
+							<header>
+								<a href="http://gtushar.co/balert/" class="mini_proj_link">&lt; Balert &#x2F; &gt;</a>
+							</header>
+							<div class="proj_content">
+								<p class="proj_detail">
+									Balert is for all the lazy people (like me <i class="fa fa-smile-o" ></i> ) who often miss desktop notifications. A console app with an option to set custom warning messages & level, it says clear and loud whenever your battery becomes low! 
+									Currently, it's published at <a href="https://pypi.python.org/pypi/Balert">PyPi</a> and is being used by 10k+ users.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div data-sr='enter left move 60px over 1s'  class="proj_inner mini_proj_slide">
+							<header>
+								<a href="http://gtushar.co/py2pdf/" class="mini_proj_link">&lt; Py2Pdf &#x2F; &gt;</a>
+							</header>
+							<div class="proj_content">
+								<p class="proj_detail">
+									Converts .py file into .pdf with syntax highlighting
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div data-sr='enter right move 60px over 1s'  class="proj_inner mini_proj_slide">
+							<header>
+								<a href="http://gtushar.co/Pynail/" class="mini_proj_link">&lt; Pynail &#x2F; &gt;</a>
+							</header>
+							<div class="proj_content">
+								<p class="proj_detail">
+									Creating thumbnails efficiently using Multiprocessing. All the images used in this webpage have been resized using Pynail.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div data-sr='enter bottom move 60px over 1s'  class="proj_inner mini_proj_slide">
+							<header>
+								<a href="http://gtushar.co/Blogular/" class="mini_proj_link">&lt; Blogular &#x2F; &gt;</a>
+							</header>
+							<div class="proj_content">
+							<p class="proj_detail">
+								Blog generator with minimum setup. To start using it you need to feed article content as json data. My personal <a href="http://gtushar.co/blog/#/">blog</a> is generated using Blogular.
+							</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="pro_container">
+					<div class="pro_wrap left">
+						<div data-sr='enter top move 60px over 1s'  class="proj_inner">
+							<header>
+								<a href="http://gtushar.co/balert/" class="proj_link">&lt; Balert &#x2F; &gt;</a>
+							</header>
+							<div class="proj_content">
+							<p class="proj_detail">
+								Balert is for all the lazy people (like me <i class="fa fa-smile-o" ></i> ) who often miss desktop notifications. A console app with an option to set custom warning messages & level, it says clear and loud whenever your battery becomes low! 
+								Currently, it's published at <a href="https://pypi.python.org/pypi/Balert">PyPi</a> and is being used by 10k+ users.
+							</p>
+							
+							</div>
+						</div>
+						<div data-sr='enter left move 60px over 1s'  class="proj_inner">
+							<header>
+								<a href="http://gtushar.co/py2pdf/" class="proj_link">&lt; Py2Pdf &#x2F; &gt;</a>
+							</header>
+							<div class="proj_content">
+								<p class="proj_detail">
+									Converts .py file into .pdf with syntax highlighting
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="pro_wrap right">
+						<div data-sr='enter right move 60px over 1s'  class="proj_inner">
+							<header>
+								<a href="http://gtushar.co/Pynail/" class="proj_link">&lt; Pynail &#x2F; &gt;</a>
+							</header>
+							<div class="proj_content">
+								<p class="proj_detail">
+									Creating thumbnails efficiently using Multiprocessing. All the images used in this webpage have been resized using Pynail.
+								</p>
+							</div>
+						</div>
+						<div data-sr='enter bottom move 60px over 1s'  class="proj_inner">
+							<header>
+								<a href="http://gtushar.co/Blogular/" class="proj_link">&lt; Blogular &#x2F; &gt;</a>
+							</header>
+							<div class="proj_content">
+							<p class="proj_detail">
+								Blog generator with minimum setup. To start using it you need to feed article content as json data. My personal <a href="http://gtushar.co/blog/#/">blog</a> is generated using Blogular.
+							</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<!-- Contacts -->
 			<div class="main contact section" data-anchor="contact" >
-				<h1 data-sr='enter top move 35px over 1s' class="py_love" > Et tu Python amare?</h1>
+				<h1 data-sr='enter top move 35px over 1s' class="py_love" > Et tu <span style="color:#C1D07B;">Python</span> amare<span style="color:#C1D07B;">?</span></h1>
 				<div class="ping_wrapper">
 					<p data-sr='enter bottom move 35px over 1s' >Either way, if you want to say just hello or have an idea and want to collaborate to build some cool stuffs ,</p> 
-					<p data-sr='enter bottom move 35px over 1s' >feel free to <a data-sr='enter right move 35px over 1s' class="ping_me" href="mailto:tushar.rishav@gmail.com"  >ping me<i class="fa fa-commenting" ></i></a></p>
+					<p data-sr='enter bottom move 35px over 1s' >feel free to <a data-sr='enter right move 35px over 1s' class="ping_me" href="mailto:tushar.rishav@gmail.com"  >ping<span class="desktop">me</span><i class="fa fa-commenting" ></i></a></p>
 					<p data-sr='enter bottom move 35px over 1s' >Want to know more about this social being? Stalk me here</p>
 					<div class="social_wrapper">
 						<span class="social" ><a href="https://plus.google.com/112857212849998453548/posts" ><i class="fa fa-2x fa-google-plus-square"></i></a></span>
@@ -164,12 +289,121 @@
 		<script src="js/svg_func.js"></script>
 		<script src="js/scrollReveal.min.js"></script>
 		<script type="text/javascript">
+			var canv_skill = document.getElementById("mySkill");
+			canv_skill.width = 2*screen.availWidth/3;
+			canv_skill.height = screen.availHeight/2;
 			var config = {
 		        vFactor: 0.95,
 		        mobile: false,
 		        reset: true
 			 }
 			window.sr = new scrollReveal(config);
+			// Chart for showing skills
+			var ctx = document.getElementById("mySkill").getContext("2d");
+			var options = {
+			    segmentShowStroke : true,
+				segmentStrokeColor : "#E7E9BB",
+				segmentStrokeWidth : 2,
+			    percentageInnerCutout : 50, 
+			    animationSteps : 150,
+			    animationEasing : "easeOutBounce",
+			    animateRotate : true,
+			    animateScale : true,
+			    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+
+			}
+			
+			var data = [
+			    {
+			        value: 500,
+			        color:"green",
+			        highlight: "#FF5A5E",
+			        label: "Python"
+			    },
+			     {
+			        value: 170,
+			        color: "blue",
+			        highlight: "#616774",
+			        label: "PHP"
+			    },
+			    {
+			        value: 440,
+			        color: "#46BFBD",
+			        highlight: "#5AD3D1",
+			        label: "C++"
+			    },
+			    {
+			        value: 400,
+			        color: "#FDB45C",
+			        highlight: "#FFC870",
+			        label: "JavaScript"
+			    },
+			    {
+			        value: 300,
+			        color: "#949FB1",
+			        highlight: "#A8B3C5",
+			        label: "CoffeeScript"
+			    },
+			    {
+			        value: 180,
+			        color: "#804f7c",
+			        highlight: "#616774",
+			        label: "Dart"
+			    },
+			    {
+			        value: 270,
+			        color: "#4D5360",
+			        highlight: "#616774",
+			        label: "AngularJS"
+			    },
+			    {
+			        value: 150,
+			        color: "maroon",
+			        highlight: "#616774",
+			        label: "Rails"
+			    },
+			   
+			    {
+			        value: 130,
+			        color: "gray",
+			        highlight: "#616774",
+			        label: "GNU Octave"
+			    },
+			    {
+			        value: 100,
+			        color: "orange",
+			        highlight: "#616774",
+			        label: "Clojure"
+			    },
+			    {
+			        value: 150,
+			        color: "purple",
+			        highlight: "#616774",
+			        label: "Git"
+			    },
+			    {
+			        value: 220,
+			        color: "lightgreen",
+			        highlight: "#616774",
+			        label: "CSS"
+			    },
+			    {
+			        value: 280,
+			        color: "lightpink",
+			        highlight: "#616774",
+			        label: "HTML"
+			    },
+			    {
+			        value: 200,
+			        color: "lightblue",
+			        highlight: "#616774",
+			        label: "Bootstrap"
+			    }
+
+			];
+			var myNewChart = new Chart(ctx).PolarArea(data);
+			new Chart(ctx).PolarArea(data, options);
+			
 		</script>
 		
 		

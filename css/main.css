@@ -2,6 +2,9 @@ img{
 	width:100%;
 	height:auto;	/* For responsive images */
 }
+.high{
+	z-index: 1000;
+}
 .center{
 	text-align: center;
 }
@@ -23,7 +26,7 @@ img{
 	background: rgba(181, 180, 177, 0.32);
 }
 #welcome_second{
-	font-size:115%;
+	font-size:1.3em;
 	padding: 1%;
 	position: relative;
 	top:5%;
@@ -34,9 +37,6 @@ img{
 }
 .typed-cursor{
 	font-weight: 500;
-}
-#code_lang{
-	color:rgba(243, 249, 122, 0.92);;
 }
 .me{
 	width:15%;
@@ -49,25 +49,30 @@ img{
 .intro{
 	background-image: url('../img/cricket.png');
 	background-size: cover;
+	font-family: monospace;
 }
 
 .who{
 	background-image: url("../img/cover_min.png");background-size: cover;
-	color:cornsilk;
+	color:aliceblue;
+	font-family: monospace;
 	
 }
 .who a{
-	color:gray;
+	color:#C26262;
 	font-weight: 600;
 
 }
+.love{
+	background:#D4DEDE;
+}
 .work{
-  background: -webkit-linear-gradient(90deg, #403B4A 10%, #E7E9BB 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #403B4A 10%, #E7E9BB 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #403B4A 10%, #E7E9BB 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #403B4A 10%, #E7E9BB 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #403B4A 10%, #E7E9BB 90%); /* W3C */
-        
+  background: -webkit-linear-gradient(90deg, #403B4A 10%, #727261 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #403B4A 10%, #727261 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #403B4A 10%, #727261 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #403B4A 10%, #727261 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #403B4A 10%, #727261 90%); /* W3C */
+  text-align: center;
 }
 .contact{
   text-align: center;
@@ -76,16 +81,25 @@ img{
   background:     -ms-linear-gradient(90deg, rgb(46, 46, 49) 10%, #808350 90%); /* IE10 */
   background:      -o-linear-gradient(90deg, rgb(46, 46, 49) 10%, #808350 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, rgb(46, 46, 49) 10%, #808350 90%); /* W3C */
-        
+  font-family: monospace;
+  font-weight: 300;
+}
+.proj_wrapper{
+	margin-left: 5%;
+}
+.proj_content{
+	font-family: monospace;
+
 }
 .py_love{
 	border-style: solid;
 	border:0px;
 	border-bottom: 3px;
-	box-shadow: 0px 3px gray;
+	box-shadow: 0px 3px #C1D07B;
 	display: inline;
 	width: 100%;
 	height: auto;
+	padding: 1%;
 
 }
 .ping_wrapper{
@@ -130,20 +144,86 @@ img{
 	margin-left: 3%;
 	margin-right: 3%;
 }
+#mySkill{
+	position: absolute;
+	left: 0%;
+	top:10%;
+}
+.skill_wrap{
+	width: 50%;
+	background: gray !important;
+}
 
+#welcome_second .fa-code{
+	font-size: 2em;
+}
+/* Project ribbon*/
+
+.ribbon {
+ font-size: 16px !important;
+ width: 30%;
+ position: absolute;
+ top:5%;
+ right:-2%;
+ background: linear-gradient(120deg, #155799, #159957);
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em;
+ margin: 2em auto 3em; 
+ z-index: 999;
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid linear-gradient(120deg, #155799, #159957);
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #804f7c transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+.pro_container{
+		position: absolute;
+		top:8% !important;
+		left:3%;
+	}
 @media only screen and (max-width: 750px){
+	*{
+		font-size: 1em !important;
+	}
 	.mini_nav{
 		display:block;
 		position: fixed;
 		top:2%;
 		text-align: center;
-		background: rgb(46, 46, 49);
+		background: rgba(46, 46, 49, 0.75);
 		z-index: 100000;
+		text-align: center;
 
-	}
-
-	.fa{
-		margin: 7px;
 	}
 	#mini_nav_tab{
 		display: none;
@@ -154,8 +234,70 @@ img{
 	nav nav-tabs li:active{
 		color:black;
 	}
-	.menu{display:none;}
+	.menu{
+		display:none;
+	}
+	.desktop{
+		display:none;
+	}
+	.fa{
+		margin: 7px;
+	}
 	
+	.ping_me{
+		width:60%;
+	}
+	.ribbon{
+		position:absolute;
+		text-align: center;
+		width:50%;
+		height: auto;
+		right:-5%;
+		top:0%;
+	}
+	.work .fp-tableCell{
+		vertical-align: inherit;
+	}
+	.ribbon-content{
+		font-size: 50% !important;
+
+	}
+	
+	.small_screen{
+		position: absolute;
+		top:10%;
+		left: 6%;
+	}
+
+}
+.mini_pro{
+		display:none;
+}
+.mini_proj_link{
+	text-decoration: none;
+	font-size: 1em !important;
+	color:aliceblue !important;
+	font-family: monospace;
+	margin: 0px; 
+
+	}
+.mini_proj_link:hover{
+	text-decoration: none;
+}
+@media only screen and (max-width:650px){
+	.mini_pro{
+		display:block;
+		font-size: 1em !important;
+	}
+	.mini_pro .proj_detail{
+		font-size: 0.7em !important;
+	}
+	.pro_container{
+		display: none;
+	}
+	.proj_link{
+		font-size: 1em !important;
+	}
 }
 @media only screen and (max-width: 935px) {
     .intro{
@@ -165,8 +307,82 @@ img{
 
 	}
 	body{
-		background-image:url('../img/mini_cric.png');
+		background-image:url('../img/mini_cric.png');	/* Load smaller size image for mobiles etc */
 		background-size: contain;
 	}
 
 }
+#code_lang{
+	color:#C9D627;
+}
+.mini_proj_slide{
+	position: relative;
+    top: 44%;
+    text-align: center;
+    left: 0%;
+    margin-left: 15%;
+}
+.pro_container{
+	width: 100%;
+	position: absolute !important;
+	top:30% !important;
+	left: 6% !important;
+}
+.proj_detail{
+	margin-top: 6%;
+	font-size: 16px;
+	color:darkgray;
+}
+header{
+	border-style: solid;
+	border:0px;
+	border-bottom: 3px;
+	box-shadow: 0px 3px lightgreen;
+	display: inline;
+	width: 100%;
+	height: auto;
+	padding: 3%;
+
+}
+.proj_inner{
+	width: 72%;
+	height: auto;
+}
+
+.pro_wrap{
+	width: 45%;
+	display: inline;
+	border-style: none !important;
+	margin: 0px;
+}
+.proj_link{
+	text-decoration: none;
+	font-size: 1.7em !important;
+	color:aliceblue !important;
+	font-family: monospace;
+	margin: 0px; 
+
+}
+.proj_link:hover{
+	text-decoration: none;
+}
+.right{
+	float: right;
+	margin-left: -3%;
+	position: relative;
+	left:-2%;
+}
+.left{
+	float: left;
+	margin-right: -3%;
+	position: relative;
+	left:5%;
+}
+.well{
+	width:100%;
+	height:20%;
+	margin: 2%;
+	background:transparent;
+	border-style: none !important;
+}
+
