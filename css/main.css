@@ -138,6 +138,43 @@ img{
 	height: auto;
 }
 
+.my_love,.why_code{
+	z-index: 10000;
+	background: black;
+	width: 80%;
+	height: auto;
+	position: absolute;
+	right:10%;
+	top:60%;
+	background: transparent;
+	color: #807979;
+	font-family: monospace;
+	display: block;
+}
+.skill_wrap{
+	width: 50%;
+	display: inline;
+}
+.why_code{
+	display: inline;
+	width: 40%;
+	position: absolute;
+	top:25%;
+	right:10%;
+	border-style: solid;
+	border-color: lightgreen;
+	border-width: 0px;
+	border-left-width:5px;
+	padding: 1%;
+
+
+}
+.major_skill{
+	display: block;
+}
+.mini_skill{
+	display: none;
+}
 /* Make navigation bar responsive*/
 .mini_nav{
 	display:none;
@@ -149,11 +186,6 @@ img{
 	left: 0%;
 	top:10%;
 }
-.skill_wrap{
-	width: 50%;
-	background: gray !important;
-}
-
 #welcome_second .fa-code{
 	font-size: 2em;
 }
@@ -211,6 +243,9 @@ img{
 		top:8% !important;
 		left:3%;
 	}
+.mini{
+	display: block;
+}
 @media only screen and (max-width: 750px){
 	*{
 		font-size: 1em !important;
@@ -284,6 +319,11 @@ img{
 .mini_proj_link:hover{
 	text-decoration: none;
 }
+@media only screen and (max-width:320px){
+	.mini{
+		display: none;
+	}
+}
 @media only screen and (max-width:650px){
 	.mini_pro{
 		display:block;
@@ -297,6 +337,19 @@ img{
 	}
 	.proj_link{
 		font-size: 1em !important;
+	}
+	
+	.why_code{
+		top:4%;
+	}
+	.my_love{
+		bottom:1%;
+	}
+	.major_skill{
+		display: none;
+	}
+	.mini_skill{
+		display: block;
 	}
 }
 @media only screen and (max-width: 935px) {

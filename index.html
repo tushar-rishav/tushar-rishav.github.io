@@ -25,6 +25,9 @@
 		<script src="js/Chart.min.js"></script>
 		<script type="text/javascript">
 			// </> for welcome note goes here
+			var dom = function(id){
+				return document.getElementById(id);
+			}
 			$(document).ready(function() {
 				$('#container').fullpage({
 					anchors: ['intro', 'who','love','work','contact'],
@@ -147,12 +150,45 @@
 			</div>
 			<!-- What i love -->
 			<div class="love section fp-auto-height" data-anchor="love" >
-				<div class="skill_wrap" id="canv_wrap">
-					<h1 class="ribbon">
-						   <strong class="ribbon-content">My Skills</strong>
-					</h1>
-					<canvas data-sr='enter left move 100px over 1s' id="mySkill" width="400" height="300"></canvas>
+				<div class="major_skill">
+					<div class="skill_wrap" id="canv_wrap">
+						<h1 class="ribbon">
+							   <strong class="ribbon-content">My Skills</strong>
+						</h1>
+						<canvas data-sr='enter left move 100px over 1s' id="mySkill" width="400" height="300"></canvas>
+						
+					</div>
+					<div class="why_code" id="why_s" >
+						<p>
+							 I mostly write scripts that make my everyday tasks quicker or easier, but like many developers I sometimes write code just to learn from it and teach myself new concepts. <a href="https://github.com/tushar-rishav/Blogular">Blogular</a> is one such example.
+						</p>
+					
+					</div>
+					<div class="my_love" id="love_s">
+						
+						<p>
+								Well, I relate coding with fast bowling in a game of Cricket.I say  <i> fastest isn’t always the best route</i>.
+								Sometimes a perfect slow delivery can also do the job! <i class="fa fa-smile-o"></i>
+								Apart from spending time to improve my coding skills, I generally spend my time watching T.V series, Short documentaries, TED Talks, PyCon talks( the best way to spend time surfing Youtube! ) and obviously by attending boring lectures!! 
+						</p>
+					</div>
 				</div>
+				<div class="mini_skill conatiner">
+						<h1 class="ribbon mini">
+						   <strong class="ribbon-content">
+						   		<span>My Skills</span>
+						   		
+						   	</strong>
+						</h1>
+						<p style="font-size:1em; color:#807979; text-align:center;padding:10px;margin-top:20px; line-height:initial; " >
+							 I mostly write scripts that make my everyday tasks quicker or easier, but like many developers I sometimes write code just to learn from it and teach myself new concepts. <a href="https://github.com/tushar-rishav/Blogular">Blogular</a> is one such example.Well, I relate coding with fast bowling in a game of Cricket.I say  <i> fastest isn’t always the best route</i>.
+								Sometimes a perfect slow delivery can also do the job! <i class="fa fa-smile-o"></i>
+								Apart from spending time to improve my coding skills, I generally spend my time watching T.V series, Short documentaries, TED Talks, PyCon talks( the best way to spend time surfing Youtube! ) and obviously by attending boring lectures!! 
+						</p>
+						
+				</div> 
+
+				
 			</div>
 			
 			<!-- What i've done -->
@@ -290,7 +326,7 @@
 		<script src="js/scrollReveal.min.js"></script>
 		<script type="text/javascript">
 			var canv_skill = document.getElementById("mySkill");
-			canv_skill.width = 2*screen.availWidth/3;
+			canv_skill.width = screen.availWidth/2;
 			canv_skill.height = screen.availHeight/2;
 			var config = {
 		        vFactor: 0.95,
@@ -300,6 +336,7 @@
 			window.sr = new scrollReveal(config);
 			// Chart for showing skills
 			var ctx = document.getElementById("mySkill").getContext("2d");
+			
 			var options = {
 			    segmentShowStroke : true,
 				segmentStrokeColor : "#E7E9BB",
