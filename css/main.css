@@ -196,7 +196,7 @@ img{
  width: 30%;
  position: absolute;
  top:5%;
- right:-2%;
+ right:0%;
  background: linear-gradient(120deg, #155799, #159957);
  color: #fff;
  text-align: center;
