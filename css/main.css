@@ -138,14 +138,13 @@ img{
 	height: auto;
 }
 
-.my_love,.why_code{
+.my_love{
 	z-index: 10000;
-	background: black;
 	width: 80%;
 	height: auto;
 	position: absolute;
 	right:10%;
-	top:60%;
+	bottom:2%;
 	background: transparent;
 	color: #807979;
 	font-family: monospace;
@@ -156,11 +155,15 @@ img{
 	display: inline;
 }
 .why_code{
+	z-index: 10000;
 	display: inline;
-	width: 40%;
+	width: 50%;
+	height: auto;
 	position: absolute;
-	top:25%;
+	top:32%;
 	right:10%;
+	color: #807979;
+	font-family: monospace;
 	border-style: solid;
 	border-color: lightgreen;
 	border-width: 0px;
@@ -174,6 +177,9 @@ img{
 }
 .mini_skill{
 	display: none;
+}
+.skill_link{
+	color:#008000;
 }
 /* Make navigation bar responsive*/
 .mini_nav{
@@ -287,7 +293,7 @@ img{
 		text-align: center;
 		width:50%;
 		height: auto;
-		right:-5%;
+		right:0%;
 		top:0%;
 	}
 	.work .fp-tableCell{
