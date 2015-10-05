@@ -1,0 +1,84 @@
+<!-- Made during Festember'14 -->
+<!DOCTYPE html>
+
+ 
+<html>
+	<head>
+		<script>
+		document.title="My Flappy";
+		</script>
+		
+	        <meta name="viewport" content="width=device-width,initial-scale=1.0" charset="UTF-8" />
+		<link href="MyFlappy.css" rel="stylesheet" />
+		<link rel="icon" href="images/icon.png"/>
+	</head>
+	
+	<body>
+		<style> html{display:none;} </style>
+			<script>
+				if(self == top) {
+       					document.documentElement.style.display = 'block'; 
+   					} 
+   					else 
+    					top.location = self.location; 
+   						
+			</script>
+
+		<div id="top" >
+			<header>Choose your bird</header>
+			<hgroup>To control bird Use Spacebar</hgroup>
+			<ul>
+				<li id="l2" onclick="start(2)" onmouseover="changeFlappyPos(2)" >Blue berry</li>
+				<li id="l3" onclick="start(3)" onmouseover="changeFlappyPos(3)" >Lill berry</li>
+				<li id="l4" onclick="start(4)" onmouseover="changeFlappyPos(4)" >Red berry</li>
+			</ul>
+			<img src="images/2.png" width="15%" height="40%" id="guide"></img>
+
+		</div>	
+		 <section>
+			<canvas id="game_canvas"  ></canvas>  <!-- for background and score-->
+            <canvas id="pipes_canvas"></canvas>
+			<canvas id="flappy_canvas" ></canvas>
+		 </section>
+
+		 <div id="pAgain" onclick="screwAgain()" >
+		 	Play again
+		 </div>
+		 <span id="score"></span>
+
+		 <div id="gOverWrapper">
+		 	<canvas id="gOver"></canvas>
+		 </div>
+		 
+		 <script>
+			 		 	im=document.getElementById("guide");
+			 		 	
+		 function changeFlappyPos(pos){
+		 	switch(pos)
+		 	{
+		 		case 2: im.style.top="15%";
+		 				document.getElementById("guide").src="images/"+pos+".png";
+		 				break;
+		 		case 3: im.style.top="34%";
+		 				document.getElementById("guide").src="images/"+pos+".png";
+		 				break;
+		 		case 4:im.style.top="55%";
+		 				document.getElementById("guide").src="images/"+pos+".png";
+		 				
+		 		
+		 				break;
+		 	}
+
+		 	
+
+		 }
+
+
+
+		 </script>
+		<script  src="flappy.js"></script>
+		
+	</body>
+	
+
+</html>		

@@ -444,4 +444,17 @@ header{
 	background:transparent;
 	border-style: none !important;
 }
+.footer{
+	
+	color:#C1D07B;
+	position: relative;
+	top:16%;
+	height: auto;
+	z-index: 100;
+	text-align: center;
+
+}
+.footer p{
+	font-size: 1em !important;
+}
 

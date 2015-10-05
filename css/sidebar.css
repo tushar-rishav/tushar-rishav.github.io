@@ -48,7 +48,7 @@
 }
 
 .menu ul li {
-	margin: 0 0 2em 0;
+	margin: 0 0 1.2em 0;
 	-webkit-transform: translate3d(-150px, 0, 0);
 	transform: translate3d(-150px, 0, 0);
 	-webkit-transition: -webkit-transform 0.6s;
@@ -86,6 +86,11 @@
 	display: block;
 	margin: 0 auto;
 	color:#BFC0B3;
+}
+#game_list li .fa{
+	font-size: 1.5em;
+	margin: 0.4em !important;
+
 }
 
 .menu ul li span {

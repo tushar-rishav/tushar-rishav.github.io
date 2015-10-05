@@ -66,6 +66,12 @@
 			      height:'toggle'
 			    });
 			    });
+
+			    $("#games").click(function(){
+			    $("#game_list").animate({
+			      height:'toggle'
+			    });
+			    });
     
 				
 			});
@@ -87,12 +93,12 @@
 			<span id="mini_nav_handle"><i style="color:#808350;" class="fa fa-2x fa-navicon"></i></span>
 			<nav id="mini_nav_tab">
 					<ul class="nav nav-tabs center">
-						<li data-menuanchor="intro" ><a href="#intro"><i class="fa fa-home "></i><span>INTRODUCTION<span></a></li>
-						<li data-menuanchor="who" ><a href="#who"><i class="fa fa-user "></i><span>WHO I AM<span></a></li>
-						<li data-menuanchor="love" ><a href="#love"><i class="fa fa-heart "></i><span>WHAT I LOVE TO DO<span></a></li>
-						<li data-menuanchor="work" ><a href="#work"><i class="fa fa-code "></i><span>WHAT I'VE DONE<span></a></li>
-						<li data-menuanchor="blog" ><a href="blog/"><i class="fa  fa-book "></i><span>BLOG<span></a></li>
-						<li data-menuanchor="contact" ><a href="#contact"><i class="fa  fa-send "></i><span>CONTACT<span></a></li>
+						<li data-menuanchor="intro" ><a href="#intro"><i class="fa fa-home "></i><span>INTRODUCTION</span></a></li>
+						<li data-menuanchor="who" ><a href="#who"><i class="fa fa-user "></i><span>WHO I AM</span></a></li>
+						<li data-menuanchor="love" ><a href="#love"><i class="fa fa-heart "></i><span>WHAT I LOVE TO DO</span></a></li>
+						<li data-menuanchor="work" ><a href="#work"><i class="fa fa-code "></i><span>WHAT I'VE DONE</span></a></li>
+						<li data-menuanchor="blog" ><a href="blog/"><i class="fa  fa-book "></i><span>BLOG</span></a></li>
+						<li data-menuanchor="contact" ><a href="#contact"><i class="fa  fa-send "></i><span>CONTACT</span></a></li>
 						
 					</ul>
 			</nav>
@@ -102,11 +108,18 @@
 				<div class="menu__inner">
 					<ul>
 						<li data-menuanchor="intro" ><a href="#intro"><i class="fa fa-home "></i><span>INTRODUCTION<span></a></li>
-						<li data-menuanchor="who" ><a href="#who"><i class="fa fa-user "></i><span>WHO I AM<span></a></li>
-						<li data-menuanchor="love" ><a href="#love"><i class="fa fa-heart "></i><span>WHAT I LOVE TO DO<span></a></li>
-						<li data-menuanchor="work" ><a href="#work"><i class="fa fa-code "></i><span>WHAT I'VE DONE<span></a></li>
-						<li data-menuanchor="blog" ><a href="blog/"><i class="fa  fa-book "></i><span>BLOG<span></a></li>
-						<li data-menuanchor="contact" ><a href="#contact"><i class="fa  fa-send "></i><span>CONTACT<span></a></li>
+						<li data-menuanchor="who" ><a href="#who"><i class="fa fa-user "></i><span>WHO I AM</span></a></li>
+						<li data-menuanchor="love" ><a href="#love"><i class="fa fa-heart "></i><span>WHAT I LOVE TO DO</span></a></li>
+						<li data-menuanchor="work" ><a href="#work"><i class="fa fa-code "></i><span>WHAT I'VE DONE</span></a></li>
+						<li id="games" ><a  ><i class="fa fa-gamepad "></i><span>GAMES</span></a>
+								<ul style="display:none;" id="game_list" >
+									<li><a href="games/flappy"><i class="fa fa-crosshairs " style="display: inline !important; margin:0px;" ></i><span>Flappy</span></li>
+								</ul>
+							
+						</li>
+						<li data-menuanchor="blog" ><a href="blog/"><i class="fa  fa-book "></i><span>BLOG</span></a></li>
+						<li data-menuanchor="contact" ><a href="#contact"><i class="fa  fa-send "></i><span>CONTACT</span></a></li>
+
 					</ul>
 				</div>
 				<div class="morph-shape" data-morph-open="M300-10c0,0,295,164,295,410c0,232-295,410-295,410" data-morph-close="M300-10C300-10,5,154,5,400c0,232,295,410,295,410">
@@ -206,7 +219,7 @@
 							<div class="proj_content">
 								<p class="proj_detail">
 									Balert is for all the lazy people (like me <i class="fa fa-smile-o" ></i> ) who often miss desktop notifications. A console app with an option to set custom warning messages & level, it says clear and loud whenever your battery becomes low! 
-									Currently, it's published at <a href="https://pypi.python.org/pypi/Balert">PyPi</a> and is being used by 15k+ users.
+									Currently, it's published at <a href="https://pypi.python.org/pypi/Balert">PyPi</a> and is being used by 19k+ users.
 								</p>
 							</div>
 						</div>
@@ -258,7 +271,7 @@
 							<div class="proj_content">
 							<p class="proj_detail">
 								Balert is for all the lazy people (like me <i class="fa fa-smile-o" ></i> ) who often miss desktop notifications. A console app with an option to set custom warning messages & level, it says clear and loud whenever your battery becomes low! 
-								Currently, it's published at <a href="https://pypi.python.org/pypi/Balert">PyPi</a> and is being used by 15k+ users.
+								Currently, it's published at <a href="https://pypi.python.org/pypi/Balert">PyPi</a> and is being used by 19k+ users.
 							</p>
 							
 							</div>
@@ -307,13 +320,16 @@
 					<p data-sr='enter bottom move 35px over 1s' >feel free to <a data-sr='enter right move 35px over 1s' class="ping_me" href="mailto:tushar.rishav@gmail.com"  >ping<span class="desktop">me</span><i class="fa fa-commenting" ></i></a></p>
 					<p data-sr='enter bottom move 35px over 1s' >Want to know more about this social being? Stalk me here</p>
 					<div class="social_wrapper">
-						<span class="social" ><a href="https://plus.google.com/112857212849998453548/posts" ><i class="fa fa-2x fa-google-plus-square"></i></a></span>
-						<span class="social" ><a href="https://www.facebook.com/tushar.rishav" ><i class="fa fa-2x fa-facebook-square"></i></a></span>
-						<span class="social" ><a href="https://in.linkedin.com/in/tusharrishav" ><i class="fa fa-2x fa-linkedin-square"></i></a></span>
-						<span class="social" ><a href="https://twitter.com/tushar_rishav" ><i class="fa fa-2x fa-twitter-square"></i></a></span>
-						<span class="social" ><a href="http://stackoverflow.com/users/3673031/tushar-gautam" ><i class="fa fa-2x fa-stack-overflow"></i></a></span>
-						<span class="social" ><a href="https://github.com/tushar-rishav" ><i class="fa fa-2x fa-github-square"></i></a></span>
+						<span class="social" ><a  title="Google+" href="https://plus.google.com/112857212849998453548/posts" ><i class="fa fa-2x fa-google-plus-square"></i></a></span>
+						<span class="social" ><a title="Facebook"  href="https://www.facebook.com/tushar.rishav" ><i class="fa fa-2x fa-facebook-square"></i></a></span>
+						<span class="social" ><a title="LinkedIn" href="https://in.linkedin.com/in/tusharrishav" ><i class="fa fa-2x fa-linkedin-square"></i></a></span>
+						<span class="social" ><a title="Twitter"  href="https://twitter.com/tushar_rishav" ><i class="fa fa-2x fa-twitter-square"></i></a></span>
+						<span class="social" ><a title="Github"  href="https://github.com/tushar-rishav" ><i class="fa fa-2x fa-github-square"></i></a></span>
 					</div>
+				</div>
+				<div class="footer">
+					<p><span id ="year"></span> Tushar Gautam</p>
+					<p>Made with HTML,CSS, Bootstrap, Font Awesome and lots of ♥</p>
 				</div>
 			</div>
 
@@ -323,6 +339,9 @@
 		<script src="js/svg_func.js"></script>
 		<script src="js/scrollReveal.min.js"></script>
 		<script type="text/javascript">
+			var year = dom("year");
+			var d = new Date();
+			year.innerHTML = d.getFullYear()
 			var canv_skill = document.getElementById("mySkill");
 			canv_skill.width = screen.availWidth/2;
 			canv_skill.height = screen.availHeight/2;
