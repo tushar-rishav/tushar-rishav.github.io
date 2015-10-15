@@ -28,6 +28,12 @@
 			var dom = function(id){
 				return document.getElementById(id);
 			}
+			$(window).load(function() {
+				setTimeout(function(){
+				$(".se-pre-con").fadeOut("slow");
+				},1000);
+
+			});
 			$(document).ready(function() {
 				$('#container').fullpage({
 					anchors: ['intro', 'who','love','work','contact'],
@@ -38,7 +44,7 @@
 				});
 
 				$("#welcome").typed({
-					strings: ["<span id='welcome_first'>Hi! I am Tushar.^400 Good to see you! <i class='fa fa-smile-o' ></i></span> <br/><div id='welcome_second'>Two things in life i am crazy about : <br>1. Write <i class='fa fa-code' ></i> to build stuffs that matter and.. <br/>2. ^700Bowl a yorker!! <i class='fa fa-smile-o' ></i></div> "
+					strings: ["<span id='welcome_first'>Hi! I am Tushar.^400 Good to see you! <i class='fa fa-smile-o' ></i></span> <br/><div id='welcome_second'>Two things in life i am crazy about : <br>1. Write <i class='fa fa-code' ></i> to build stuffs that matter and.. <br/>2. ^400Bowl a yorker!! <i class='fa fa-smile-o' ></i></div> "
 					],
 					typeSpeed: 30,
 					backDelay: 50,
@@ -50,7 +56,7 @@
 				});
 
 				$("#code_lang").typed({
-					strings: ["Python","C++","Javascript","CoffeeScript","AngularJS","Rails","PHP","Dart","GNU Octave","Clojure"],
+					strings: ["Python","C++","Javascript","CoffeeScript","AngularJS","Rails","PHP","Scala","Clojure"],
 					typeSpeed: 30,
 					startDelay: 3,
 					backDelay: 1000,
@@ -88,6 +94,7 @@
 		    <span class="progress-bar"></span>
 		  </div>
 		</progress>
+		<div class="se-pre-con"></div>
 		<div id="container" >
 			<div class="mini_nav"> 
 			<span id="mini_nav_handle"><i style="color:#808350;" class="fa fa-2x fa-navicon"></i></span>
@@ -151,13 +158,12 @@
 				<div class="small_screen">
 					<div class="my_pic" ><img src="img/me.jpg" class="img img-responsive me"></div>
 					<div class="container" >
-						<p data-sr="enter bottom move 35px over 1s" >I'm a third year student studying at the <a target="_blank" href="http://www.nitt.edu/">National Institute of Technology - Trichy</a> pursuing B.Tech in <a href="http://www.nitt.edu/home/academics/departments/prod/" target="_blank">Production Engineering</a>
-						but I devote most of my time learning and developing cool stuffs.
+						<p data-sr="enter bottom move 35px over 1s" >I'm a third year student at the <a target="_blank" href="http://www.nitt.edu/">National Institute of Technology-Trichy,India</a> pursuing B.Tech in <a href="http://www.nitt.edu/home/academics/departments/prod/" target="_blank">Production Engineering</a>
+						but I devote most of my time programming and learning cool stuffs. Being an open-source lover, I like to build tools that others can use.
 						</p>
 						<p data-sr='enter left move 30px over 1s' >Currently, I'm a web developer in <a href="http://delta.nitt.edu/" target="_blank">Delta Force</a>,the central webteam of NIT Trichy.</p>
-						<p data-sr='enter right move 35px over 1s' >Last summer I interned at <a href="http://www.citruspay.com/"  >Citrus Payment.</a></p>
-						<p data-sr='enter top move 35px over 1s' >I love and use Python to craft web and console apps.</p>
-						<p data-sr='enter top move 35px over 1s' >So far, I've written code in <span id="code_lang"></span><i class="typed-cursor" ></i></p>
+						<p data-sr='enter right move 35px over 1s' >Last summer,I interned at <a href="http://www.citruspay.com/"  >Citrus Payment</a>,where I worked upon Citrus Wallet and Citrus.js, a JavaScript library to integrate checkout page with CitrusPay payment gateway.</p>
+						<p data-sr='enter top move 35px over 1s' >I love and use Python to craft web and console apps.Beside, I've written code in <span id="code_lang"></span><i class="typed-cursor" ></i></p>
 						<p data-sr='enter top move 35px over 1s' >You can catch me here at <a href="https://github.com/tushar-rishav">Github</a> </p>
 					</div>
 				</div>
@@ -171,16 +177,15 @@
 					</div>
 					<div class="why_code" id="why_s">
 						<p>
-							 I mostly write scripts that make my everyday tasks quicker or easier, but like many developers I sometimes write code just to learn from it and teach myself new concepts. <a class="skill_link" href="https://github.com/tushar-rishav/Blogular">Blogular</a> is one such example.
+							 I mostly write scripts that make my everyday tasks quicker or easier, but like many developers I sometimes write code just to learn from it and teach myself new technologies. <a class="skill_link" href="https://github.com/tushar-rishav/Blogular">Blogular</a> is one such example.
 							 Moreover, whenever possible I utmost try to contribute towards social cause in any possible ways. 
 							 <a class="skill_link" href="http://sampannajeevan.org/">Sampanna Jeevan</a>, a NGO is one such contribution. I developed the website during my sophomore year.
 						</p>
 					</div>
 					<div class="my_love" id="love_s">
 						<p>
-								Well, I relate coding with fast bowling in a game of Cricket.I say  <i> fastest isn’t always the best route</i>.
-								Sometimes a perfect slow delivery can also do the job! <i class="fa fa-smile-o"></i>
-								Apart from spending time to improve my coding skills, I generally spend my time watching T.V series, Short documentaries, TED Talks, PyCon talks( the best way to spend time surfing Youtube! ) and obviously by attending boring lectures!! 
+								Well, I relate coding with fast bowling in a game of Cricket. I say <i> fastest isn’t always the best route</i>.Sometimes a perfectly planned slow delivery can do better job! <i class="fa fa-smile-o"></i>
+								Apart from spending time to improve my coding skills, I generally spend my time watching T.V series, Short documentaries, TED/PyCon talks and by attending boring lectures! 
 						</p>
 					</div>
 				</div>
@@ -191,11 +196,9 @@
 						   	</strong>
 						</h1>
 						<p style="font-size:1em; color:#807979; text-align:center;padding: 0px;margin-top: 34px;line-height: 16px" >
-							 I mostly write scripts that make my everyday tasks quicker or easier, but like many developers I sometimes write code just to learn from it and teach myself new concepts. <a class="skill_link"  href="https://github.com/tushar-rishav/Blogular">Blogular</a> is one such example.Moreover, whenever possible I utmost try to contribute towards social cause in any possible ways. 
-							 <a class="skill_link" href="http://sampannajeevan.org/">Sampanna Jeevan</a>, a NGO is one such contribution. I developed the website during my sophomore year.<br/>
-							 Well, I relate coding with fast bowling in a game of Cricket.I say  <i> fastest isn’t always the best route</i>.
-								Sometimes a perfect slow delivery can also do the job! <i class="fa fa-smile-o"></i>
-								Apart from spending time to improve my coding skills, I generally spend my time watching T.V series, Short documentaries, TED Talks, PyCon talks( the best way to spend time surfing Youtube! ) and obviously by attending boring lectures!! 
+							 I mostly write scripts that make my everyday tasks quicker or easier, but like many developers I sometimes write code just to learn from it and teach myself new technologies. <a class="skill_link" href="https://github.com/tushar-rishav/Blogular">Blogular</a> is one such example.
+							 Moreover, whenever possible I utmost try to contribute towards social cause in any possible ways. 
+							 <a class="skill_link" href="http://sampannajeevan.org/">Sampanna Jeevan</a>, a NGO is one such contribution. I developed the website during my sophomore year.
 						</p>
 				</div> 
 
@@ -206,7 +209,7 @@
 			<div class="main work section" data-anchor="work" >
 			<h1 class="ribbon">
 			   <strong class="ribbon-content">
-			   		<span>My open source Projects</span>
+			   		<span>My recent Projects</span>
 			   		<a href="https://github.com/tushar-rishav" class="high" title="More Projects" style="float:left;text-decoration:none;" >&nbsp;<i class="fa fa-2x fa-github"></i></a>
 			   	</strong>
 			</h1>
@@ -218,8 +221,8 @@
 							</header>
 							<div class="proj_content">
 								<p class="proj_detail">
-									Balert is for all the lazy people (like me <i class="fa fa-smile-o" ></i> ) who often miss desktop notifications. A console app with an option to set custom warning messages & level, it says clear and loud whenever your battery becomes low! 
-									Currently, it's published at <a href="https://pypi.python.org/pypi/Balert">PyPi</a> and is being used by 19k+ users.
+									Balert is for all the lazy people (like me <i class="fa fa-smile-o" ></i> ) who often miss desktop notifications. A console app with an option to set custom warning messages & level, which says clear and loud whenever your battery becomes low! 
+									Currently, it's published at <a href="https://pypi.python.org/pypi/Balert">PyPi</a> and is being used by 25k+ users.
 								</p>
 							</div>
 						</div>
@@ -227,11 +230,11 @@
 					<div class="slide">
 						<div data-sr='enter left move 60px over 1s'  class="proj_inner mini_proj_slide">
 							<header>
-								<a href="http://gtushar.co/code2pdf/" class="mini_proj_link">&lt; Code2Pdf &#x2F; &gt;</a>
+								<a href="https://github.com/tushar-rishav/code2pdf" class="mini_proj_link">&lt; Code2Pdf &#x2F; &gt;</a>
 							</header>
 							<div class="proj_content">
 								<p class="proj_detail">
-									Converts given source code into .pdf file with syntax highlighting, custom pdf size, custom editor style (emacs, vim etc) and optional line formatting.
+									Converts given source code into PDF file with syntax highlighting, custom pdf size, custom editor style (emacs, vim etc) and optional line formatting.
 								</p>
 							</div>
 						</div>
@@ -270,19 +273,19 @@
 							</header>
 							<div class="proj_content">
 							<p class="proj_detail">
-								Balert is for all the lazy people (like me <i class="fa fa-smile-o" ></i> ) who often miss desktop notifications. A console app with an option to set custom warning messages & level, it says clear and loud whenever your battery becomes low! 
-								Currently, it's published at <a href="https://pypi.python.org/pypi/Balert">PyPi</a> and is being used by 19k+ users.
+								Balert is for all the lazy people (like me <i class="fa fa-smile-o" ></i> ) who often miss desktop notifications. A console app with an option to set custom warning messages & level, which says clear and loud whenever your battery becomes low! 
+									Currently, it's published at <a href="https://pypi.python.org/pypi/Balert">PyPi</a> and is being used by 25k+ users.
 							</p>
 							
 							</div>
 						</div>
 						<div data-sr='enter left move 60px over 1s'  class="proj_inner">
 							<header>
-								<a href="http://gtushar.co/code2pdf/" class="proj_link">&lt; Code2Pdf &#x2F; &gt;</a>
+								<a href="https://github.com/tushar-rishav/code2pdf" class="proj_link">&lt; Code2Pdf &#x2F; &gt;</a>
 							</header>
 							<div class="proj_content">
 								<p class="proj_detail">
-									Convert given source code into .pdf file with syntax highlighting, custom pdf size, custom editor style (emacs, vim etc) and optional line formatting. 
+									Convert given source code into PDF file with syntax highlighting, custom pdf size, custom editor style (emacs, vim etc) and optional line formatting. 
 								</p>
 							</div>
 						</div>
@@ -317,7 +320,7 @@
 				<h1 data-sr='enter top move 35px over 1s' class="py_love" > Et tu <span style="color:#C1D07B;">Python</span> amare<span style="color:#C1D07B;">?</span></h1>
 				<div class="ping_wrapper">
 					<p data-sr='enter bottom move 35px over 1s' >Either way, if you want to say just hello or have an idea and want to collaborate to build some cool stuffs ,</p> 
-					<p data-sr='enter bottom move 35px over 1s' >feel free to <a data-sr='enter right move 35px over 1s' class="ping_me" href="mailto:tushar.rishav@gmail.com"  >ping<span class="desktop">me</span><i class="fa fa-commenting" ></i></a></p>
+					<p data-sr='enter bottom move 35px over 1s' >feel free to <a data-sr='enter right move 35px over 1s' class="ping_me" href="mailto:tushar.rishav@gmail.com"  >ping<span class="desktop"> me</span><i class="fa fa-commenting" ></i></a></p>
 					<p data-sr='enter bottom move 35px over 1s' >Want to know more about this social being? Stalk me here</p>
 					<div class="social_wrapper">
 						<span class="social" ><a  title="Google+" href="https://plus.google.com/112857212849998453548/posts" ><i class="fa fa-2x fa-google-plus-square"></i></a></span>
@@ -329,7 +332,7 @@
 				</div>
 				<div class="footer">
 					<p><span id ="year"></span> Tushar Gautam</p>
-					<p>Made with HTML,CSS, Bootstrap, Font Awesome and lots of ♥</p>
+					<p style="margin-top:3px;">Made with HTML,CSS, Bootstrap, Font Awesome and lots of ♥</p>
 				</div>
 			</div>
 
@@ -396,7 +399,7 @@
 			        value: 180,
 			        color: "#804f7c",
 			        highlight: "#616774",
-			        label: "Dart"
+			        label: "Scala"
 			    },
 			    {
 			        value: 270,
@@ -412,10 +415,10 @@
 			    },
 			   
 			    {
-			        value: 130,
+			        value: 200,
 			        color: "gray",
 			        highlight: "#616774",
-			        label: "GNU Octave"
+			        label: "MongDB"
 			    },
 			    {
 			        value: 100,

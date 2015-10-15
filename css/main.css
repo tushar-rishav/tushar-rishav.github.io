@@ -144,7 +144,7 @@ img{
 	height: auto;
 	position: absolute;
 	right:10%;
-	bottom:2%;
+	bottom:5%;
 	background: transparent;
 	color: #807979;
 	font-family: monospace;
@@ -160,7 +160,7 @@ img{
 	width: 50%;
 	height: auto;
 	position: absolute;
-	top:32%;
+	top:29%;
 	right:10%;
 	color: #807979;
 	font-family: monospace;
@@ -458,3 +458,15 @@ header{
 	font-size: 1em !important;
 }
 
+/* Loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/preloader.gif) center no-repeat rgba(230, 240, 212, 0.94);
+}
