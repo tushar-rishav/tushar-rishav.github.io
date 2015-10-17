@@ -293,7 +293,7 @@ img{
 		text-align: center;
 		width:50%;
 		height: auto;
-		right:0%;
+		right:-1%;
 		top:0%;
 	}
 	.work .fp-tableCell{
@@ -327,10 +327,22 @@ img{
 }
 @media only screen and (max-width:320px){
 	.mini{
-		display: none;
+		margin: 13px;
+	}
+	
+	.container p{
+		margin: 0px;
+	}
+	.footer{
+		position: relative;
+		top:10px !important;
+	}
+	.footer p{
+		margin: 0px !important;
 	}
 }
 @media only screen and (max-width:650px){
+	
 	.mini_pro{
 		display:block;
 		font-size: 1em !important;
@@ -384,7 +396,7 @@ img{
 .pro_container{
 	width: 100%;
 	position: absolute !important;
-	top:30% !important;
+	top:21% !important;
 	left: 6% !important;
 }
 .proj_detail{
