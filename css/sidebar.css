@@ -38,6 +38,7 @@
 	height: 100%;
 	position: relative;
 	z-index: 100;
+	line-height: 14px;
 }
 
 .menu ul {
