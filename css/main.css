@@ -252,6 +252,16 @@ img{
 .mini{
 	display: block;
 }
+@media only screen and (min-width: 1050px){
+	.pro{
+	text-decoration: none;
+    font-size: 1.9em !important;
+    color: aliceblue !important;
+	padding: 5px;
+    font-family: monospace;
+    margin: 5px;
+	}
+}
 @media only screen and (max-width: 750px){
 	*{
 		font-size: 1em !important;
