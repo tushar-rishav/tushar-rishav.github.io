@@ -319,6 +319,9 @@ img{
 		top:10%;
 		left: 6%;
 	}
+	.gchart{
+		display: none !important;
+	}
 
 }
 .mini_pro{
