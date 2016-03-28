@@ -348,12 +348,15 @@
 					showCursor: true,
 					cursorChar: "|"
 				});
-
+				// toggle mini nav btn
 				$("#mini_nav_handle").click(function(){
-			    $("#mini_nav_tab").animate({
-			      height:'toggle'
-			    });
-			    });
+			    	  $("#mini_nav_tab").animate({
+			      	    height:'toggle'
+			   	  });
+			        });
+				$("#mini_nav_tab ul li a").click(function(event){
+				  $("#mini_nav_tab").hide(500);
+				});
 
 			    $("#games").click(function(){
 			    $("#game_list").animate({
