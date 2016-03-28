@@ -97,3 +97,5 @@ header{border-style:solid;border:0px;border-bottom:3px;box-shadow:0px 3px lightg
 .js #loader{display:block;position:absolute;left:100px;top:0;}
 .se-pre-con{position:fixed;left:0px;top:0px;width:100%;height:100%;z-index:9999;background:url(../img/preloader.gif) center no-repeat rgba(230, 240, 212, 0.94);}
 #container{visibility: hidden;}
+::selection {background-color: #FFDD33;color: #222222;}
+::-moz-selection {background-color: #FFDD33;color: #222222;}
