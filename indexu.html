@@ -309,7 +309,6 @@
 			}
 			var setWidth=function(){progressBar.css({width:getWidth()});}
 			$(document).on('scroll',setWidth);$(window).on('resize',function(){max=getMax();setWidth();});}
-
 			});
 			
 		</script>
@@ -324,7 +323,6 @@
 					scrollBar: true
 					
 				});
-
 				$("#welcome").typed({
 					strings: ["<span id='welcome_first'>Hi! I am Tushar.^400 Good to see you! <i class='fa fa-smile-o' ></i></span> <br/><div id='welcome_second'>Two things in life i am crazy about : <br>1. Write <i class='fa fa-code' ></i> to build stuff that matters and.. <br/>2. ^400Bowl a yorker!! <i class='fa fa-smile-o' ></i></div> "
 					],
@@ -336,7 +334,6 @@
 					showCursor: true,
 					cursorChar: "|"
 				});
-
 				$("#code_lang").typed({
 					strings: ["Python","C++","Javascript","CoffeeScript","AngularJS","PHP","Scala","Node.js","Rails","Flask"],
 					typeSpeed: 30,
@@ -348,13 +345,15 @@
 					showCursor: true,
 					cursorChar: "|"
 				});
-
+				// toggle mini nav btn
 				$("#mini_nav_handle").click(function(){
-			    $("#mini_nav_tab").animate({
-			      height:'toggle'
-			    });
-			    });
-
+			    	  $("#mini_nav_tab").animate({
+			      	    height:'toggle'
+			   	  });
+			        });
+				$("#mini_nav_tab ul li a").click(function(event){
+				  $("#mini_nav_tab").hide(500);
+				});
 			    $("#games").click(function(){
 			    $("#game_list").animate({
 			      height:'toggle'
@@ -363,7 +362,6 @@
     
 				
 			});
-
 		</script>
 		
 		<script src="js/classie.js"></script>
@@ -395,7 +393,6 @@
 			    animateRotate : true,
 			    animateScale : true,
 			    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
-
 			}
 			
 			var data = [
@@ -490,7 +487,6 @@
 			        highlight: "#616774",
 			        label: "SQL"
 			    }
-
 			];
 			var myNewChart = new Chart(ctx).PolarArea(data);
 			new Chart(ctx).PolarArea(data, options);
@@ -501,10 +497,8 @@
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
 		  ga('create', 'UA-70502439-1', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
 		
 	</body>
