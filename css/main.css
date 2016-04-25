@@ -18,7 +18,7 @@ img{width:100%;height:auto;}
 .proj_content{font-family:monospace;}
 .py_love{border-style:solid;border:0px;border-bottom:3px;box-shadow:0px 3px #C1D07B;display:inline;width:100%;height:auto;padding:1%;}
 .ping_wrapper{margin-left:15%;margin-right:15%;margin-top:4%;}
-.ping_me{cursor:pointer;width:100%;height:auto;padding:1.5%;margin:1%;border:1px solid;background-color:transparent;-webkit-transition:background-color 1s;transition:background-color 1s;}
+.ping_me{cursor:pointer;width:100%;height:auto;padding:1.5%;margin:1.5%;border:1px solid;background-color:transparent;-webkit-transition:background-color 1s;transition:background-color 1s;}
 .ping_me:hover{text-decoration:none;background-color:#D3DCAB;color:gray;}
 .ping_me i{color:white;margin-left:1%;}
 .ping_me:hover i{color:gray;}
@@ -79,7 +79,7 @@ nav nav-tabs li:active{color:black;}
 @media only screen and (max-width:935px){.intro{background-image:url('../img/me_cric.png');background-size:100% 50%;background-repeat:no-repeat;}
 body{background-image:url('../img/mini_cric.png');background-size:contain;}
 }
-#code_lang{color:#C9D627;}
+#code_lang{color:#D64727;}
 .mini_proj_slide{position:relative;top:44%;text-align:center;left:0%;margin-left:15%;}
 .pro_container{width:100%;position:absolute !important;top:21% !important;left:6% !important;}
 .proj_detail{margin-top:6%;font-size:16px;color:darkgray;}
@@ -99,3 +99,4 @@ header{border-style:solid;border:0px;border-bottom:3px;box-shadow:0px 3px lightg
 #container{visibility: hidden;}
 ::selection {background-color: #FFDD33;color: #222222;}
 ::-moz-selection {background-color: #FFDD33;color: #222222;}
+.green_color{color:rgba(158, 249, 115, 0.63) !important;}
