@@ -9,8 +9,23 @@
 		<meta name="keywords" content="About, Tushar Gautam, Delta, NIT Trichy, Programming, tushar-rishav" />
 		<meta name="author" content="tushar" />
 		<link rel="shortcut icon" href="img/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/progress.css" />
-		<script src="https://use.fontawesome.com/89812c440b.js"></script>
+		<style rel="stylesheel">progress{position:fixed;left:0;bottom:1.4px;z-index:100;width:100%;height:4px;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;backgroundr:transparent;}
+		progress::-webkit-progress-bar{background:transparent;border-radius:2px;box-shadow:0 2px 5px rgba(0, 0, 0, 0.25) inset;}
+		progress::-webkit-progress-value{background-image:-webkit-linear-gradient(-45deg,
+		transparent 33%, rgba(0, 0, 0, .1) 33%,
+		rgba(0,0, 0, .1) 66%, transparent 66%),
+		-webkit-linear-gradient(left, rgb(203, 208, 123), rgb(174, 220, 31));border-radius:2px;background-size:35px 20px, 100% 100%, 100% 100%;}
+		progress::-moz-progress-bar{background-image:-moz-linear-gradient(-45deg,
+		transparent 33%, rgba(0, 0, 0, .1) 33%,
+		rgba(0,0, 0, .1) 66%, transparent 66%),
+		-moz-linear-gradient(left, rgb(203, 208, 123), rgb(174, 220, 31));border-radius:2px;box-shadow:0 2px 5px rgba(0, 0, 0, 0.25) inset;}
+		progress::-moz-progress-value{background-image:-moz-linear-gradient(-45deg,
+		transparent 33%, rgba(0, 0, 0, .1) 33%,
+		rgba(0,0, 0, .1) 66%, transparent 66%),
+		-moz-linear-gradient(left, rgb(203, 208, 123), rgb(174, 220, 31));border-radius:2px;background-size:35px 20px, 100% 100%, 100% 100%;}
+		.progress-container{width:100%;background-color:transparent;position:fixed;top:0;left:0;height:.25em;display:block;}
+		.progress-bar{background-color:transparent;width:50%;display:block;height:inherit;}</style>
+		<script async src="https://use.fontawesome.com/89812c440b.js"></script>
 	</head>
 
 	<body>
@@ -288,17 +303,14 @@
 				</div>
 			</div>
 		</div>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
-		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-		<link rel="stylesheet" type="text/css" href="css/null.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js" ></script>
+		<link defer rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link defer rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.css" />
+		<link defer rel="stylesheet" type="text/css" href="css/main.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 		<script src="js/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-		<script type="text/javascript" src="js/typed.js" ></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js" ></script>
 		<script type="text/javascript">
 			var dom = function(id){
 				return document.getElementById(id);
@@ -307,7 +319,7 @@
 				setTimeout(function(){
 				$(".se-pre-con").fadeOut("slow");
 				$("#container").css("visibility","visible");
-				},1000);
+			},400);
 			getMax=function(){return ($(document).height()-$(window).height());}
 			var getValue=function(){return $(window).scrollTop();}
 			if('max'in document.createElement('progress')){
@@ -396,8 +408,8 @@
 
 			var options = {
 			    segmentShowStroke : true,
-				segmentStrokeColor : "#E7E9BB",
-				segmentStrokeWidth : 2,
+					segmentStrokeColor : "#E7E9BB",
+					segmentStrokeWidth : 2,
 			    percentageInnerCutout : 50,
 			    animationSteps : 150,
 			    animationEasing : "easeOutBounce",
