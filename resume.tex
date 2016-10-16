@@ -1,3 +1,23 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[]{deedy-resume-openfont}
 
 
@@ -17,7 +37,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\namesection{Tushar}{Gautam}{ \urlstyle{same}\url{http://gtushar.co} \\
+\namesection{Tushar}{Gautam}{ \urlstyle{same}\url{www.gtushar.in} \\
 \href{mailto:tushar.rishav@gmail.com}{tushar[dot]rishav@gmail.com} | +91-8148593847
 }
 
@@ -37,15 +57,18 @@
 
 \subsection {\href{http://www.nitt.edu/}{NIT, Trichy, India}}
 \descript{B.Tech, Production Engineering}
-\location{Expected May 2017 | Trichy, TN, India \\ Cum. GPA: 7.65/10}
+\location{Expected May 2017 | Trichy, TN, India \\ Cum. GPA: 7.52/10}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links} 
-Github:// \href{https://github.com/tushar-rishav}{\custombold{tushar-rishav}} \\
-LinkedIn://  \href{https://www.linkedin.com/in/tusharrishav}{\custombold{tusharrishav}}
+GitHub:// \href{https://github.com/tushar-rishav}{\custombold{tushar-rishav}} \\
+GitLab:// \href{https://gitlab.com/tushar-rishav}{\custombold{tushar-rishav}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/tusharrishav}{\custombold{tusharrishav}} \\
+Quora:// \href{https://www.quora.com/profile/Tushar-50}{\custombold{Tushar-50}} \\
+Twitter:// \href{https://twitter.com/tushar\_rishav}{\custombold{tushar\_rishav}}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,8 +76,13 @@ LinkedIn://  \href{https://www.linkedin.com/in/tusharrishav}{\custombold{tusharr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Coursework} 
+\subsection{NIT, Trichy}
+Probability and Statistics (MA208)\\
+Image Processing (EC451)
+\sectionsep
 \subsection{Independent}
-Data Structures and Algorithms, IIT Delhi, NPTEL\\
+Algorithms: Design and Analysis, Stanford University, Coursera\\
+Fundamentals of Digital Image and Video Processing, Northwestern University, Coursera \\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,9 +92,11 @@ Data Structures and Algorithms, IIT Delhi, NPTEL\\
 \section{Skills}
 \subsection{Programming}
 \location{Preferred:}
-Python \textbullet{} JavaScript \textbullet{} C++ \\
+Python \textbullet{} JavaScript \\
 \location{Acquainted:}
-\textbullet{} C \textbullet{} CoffeeScript \textbullet{} PHP \textbullet{} HTML \\ \textbullet{}  CSS  \textbullet{} Clojure \textbullet{} MongoDB \textbullet{} Git \textbullet{} AngularJS \textbullet{} Rails \textbullet{} Flask \textbullet{} Node.js
+\textbullet{} C/C++ \textbullet{} CoffeeScript \textbullet{} PHP \textbullet{} HTML \\ \textbullet{}  CSS
+\subsection{Technology}
+\textbullet{} MongoDB \textbullet{} Git \textbullet{} AngularJS \textbullet{} Flask \textbullet{} Node.js \textbullet{} Docker \textbullet{} Linux (Fedora)
 \sectionsep
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %    SOCIETIES
@@ -79,9 +109,9 @@ Python \textbullet{} JavaScript \textbullet{} C++ \\
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Awards} 
-\textsuperscript {Rank }1 goibibo APIthon, [2016]\\
-\sectionsep
+%\section{Awards} 
+%\textsuperscript {Rank }1 goibibo APIthon, [2016]\\
+%\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -99,16 +129,23 @@ Python \textbullet{} JavaScript \textbullet{} C++ \\
 
 \section{Experience}
 
-\runsubsection{\href{https://summerofcode.withgoogle.com/}{Google}}
-\descript{| Google Summer of Code Intern }
-\location{Python Software Foundation | April 2016 – Present }
+\runsubsection{\href{https://github.com/coala-analyzer/coala}{coala}}
+\descript{\href{https://summerofcode.withgoogle.com/}{| Google Summer of Code Developer }}
+\location{\href{https://www.python.org/psf/}{Python Software Foundation | April 2016 – August 2016 }}
 \vspace{\topsep} 
 \begin{tightemize}
-\item Develop coala-html, a console app that generates a webpage using analysis from coala. \end{tightemize}
+\item Developed coala-html, a console app that generates an interactive webpage using static code analysis from coala, making it easier for humans to process the results. \textbf{\href{https://github.com/coala/coala-html}{\custombold{https://github.com/coala/coala-html} }} \end{tightemize}
 \begin{tightemize}
-\item Implement a demo of coala within coala website.\end{tightemize}
+\item Implemented a web interface to run static code analysis from within a web browser.\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://ep2016.europython.eu/conference/talks/guid-to-make-a-real-contribution-to-an-open-source-project-for-novice}{EuroPython}}
+\descript{| Speaker }
+\location{17 Jul 2016 – 24 Jul 2016 | Bilbao, Spain}
+\vspace{\topsep} 
 \begin{tightemize}
-\item Create a coala abstract syntax tree (coAST ) with the given programming language and then have various algorithms that operate on coAST and do cool code analysis.\end{tightemize}
+\item Conducted a training session on \textbf{\href{https://ep2016.europython.eu/conference/talks/guid-to-make-a-real-contribution-to-an-open-source-project-for-novice}{"Guide to make an open source contribution"}}, using Git, continuous integration and deployment tools. Participants made real time contributions to coala. (https://github.com/coala/coala)
+\end{tightemize}
 \sectionsep
 
 \runsubsection{\href{http://www.citruspay.com/}{Citrus Payments}}
@@ -116,9 +153,7 @@ Python \textbullet{} JavaScript \textbullet{} C++ \\
 \location{May 2015 – Jul 2015 | Pune, India}
 \vspace{\topsep} 
 \begin{tightemize}
-\item Refactoring the existing Javascript library that integrates a checkout page with Citrus payment gateway.\end{tightemize}
-\begin{tightemize}
-\item Wrote API for implementing Citrus Wallet.\end{tightemize}
+\item Refactored the existing JavaScript library that integrates a checkout page with Citrus payment gateway, resulting 40\% reduction in codebase. \end{tightemize}
 \sectionsep
 
 
@@ -129,39 +164,41 @@ Python \textbullet{} JavaScript \textbullet{} C++ \\
 
 \section{Open Source PROJECTS}
 
-\runsubsection{Coala}\\
-\location{Contributor | Feb 2016 - Present | Python}
-A language independent static code analysis application. \textbf{\href{https://github.com/coala-analyzer}{\custombold{https://github.com/coala-analyzer} }}
+\runsubsection{\href{https://github.com/coala/coala}{coala}}\\
+\location{Contributor | Python}
+A language independent static code analysis application. \textbf{\href{https://github.com/coala/coala}{\custombold{https://github.com/coala/coala} }}
+\sectionsep
+
+\runsubsection{\href{https://github.com/coala/coala-html}{coala-html}}\\
+\location{Author | Python}
+Interactive web-page generator using results from static code analysis with coala.
+\textbf{\href{https://github.com/coala/coala-html}{\custombold{https://github.com/coala/coala-html} }}
+\sectionsep
+
+\runsubsection{\href{https://gitlab.com/gitmate/IGitt/}{IGitt}}\\
+\location{Contributor | Python}
+Unified interface to access various git hosting services like GitHub, GitLab etc.
+\textbf{\href{https://gitlab.com/gitmate/IGitt/}{\custombold{https://gitlab.com/gitmate/IGitt/} }}
 \sectionsep
 
 \runsubsection{Code-Control}\\
-\location{Contributor | Feb 2016 | NodeJS}
+\location{Contributor | NodeJS}
 Code Character is a versus event. Your aim is to code a character and defeat the other player.
 \textbf{\href{https://github.com/ash7594/code-control}{\custombold{https://github.com/ash7594/code-control}}}
 \sectionsep
 
-\section{PET PROJECTS}
-\runsubsection{Wallnote}\\
-\location{Oct 2015 | Python}
-Converts desktop wallpaper into an “editable white board” enabling users to write notes with changes being reflected immediately. \textbf{\href{https://github.com/tushar-rishav/wallnote}{\custombold{https://github.com/tushar-rishav/wallnote} }}
+\runsubsection{Code2pdf}\\
+\location{Author | Python}
+Console app that converts given source code into PDF file with the options for more than 20 syntax highlighting themes, custom PDF sizes and line formatting. \textbf{\href{https://github.com/tushar-rishav/code2pdf}{\custombold{https://github.com/tushar-rishav/code2pdf}}}
 \sectionsep
-
-\runsubsection{topcoder-dl}\\
-\location{Oct 2015 | Python}
-Console app to efficiently download all the algorithm tutorials from \custombold{Topcoder} and save them locally as PDF files for offline reading.\\ \textbf{\href{https://github.com/tushar-rishav/topcoder-dl}{\custombold{https://github.com/tushar-rishav/topcoder-dl}}}.
-\sectionsep 
 
 \runsubsection{Balert}\\
-\location{Sep 2015 | Python}
+\location{Author | Python}
 A console app, that gives voice notification when the charge of battery becomes low. Users have the options to set custom warning messages, critical charge level and select English, Hindi or Tamil as one of the notification languages. \textbf{\href{https://github.com/tushar-rishav/balert}{\custombold{https://github.com/tushar-rishav/balert}}}
-\sectionsep
-
-\runsubsection{Code2pdf}\\
-\location{Sep 2015 | Python}
-Console app that converts given source code into PDF file with the options for more than 20 syntax highlighting themes, custom PDF sizes and line formatting. \textbf{\href{https://github.com/tushar-rishav/code2pdf}{\custombold{https://github.com/tushar-rishav/code2pdf}}}
 \sectionsep
 
 
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
+
