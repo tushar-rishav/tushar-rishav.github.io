@@ -1,0 +1,207 @@
+% !TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{mdframed}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Tushar}{Gautam}{ \urlstyle{same}
+\href{mailto:tushar.gautam@colorado.edu}{tushar.gautam@colorado.edu} | 720-421-2291 | \href{http://tushar-rishav.github.io/}{Website}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+\section{Education} 
+
+\subsection{University of Colorado Boulder}
+\descript{MS, Computer Science \\ {\footnotesize \textit{\textbf{(focus on Intelligent Systems) }}}  }
+\location{Expected, May 2023 | USA}
+\sectionsep
+
+\subsection{NIT Trichy}
+\descript{B.Tech, Production Engineering}
+\location{May 2017 | India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\textbullet{} Linkedin:// \href{https://www.linkedin.com/in/gautamtushar}{\underline {gautamtushar}} \\
+\textbullet{} Github:// \href{https://github.com/tushar-rishav}{\underline {tushar-rishav}} \\
+\textbullet{} Stackoverflow:// \href{https://stackoverflow.com/users/3673031/tushar-gautam}{\underline {tushar-gautam}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate
+(Fall'21)}
+\textbullet{} Design and Analysis of Algorithms \\
+\textbullet{} Natural Language Processing \\
+\textbullet{} Machine Learning
+{\footnotesize \textit{\textbf{(Teaching Asst) }}} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Programming Languages}
+\textbullet{} Python \textbullet{} JavaScript \textbullet{} C++ \\
+\location{Technology and Platform}
+\textbullet{} Nodejs \textbullet{} Linux \\
+\textbullet{} Docker
+\textbullet{} Kubeflow
+\textbullet{} Kubernetes \\
+\textbullet{} Mesos
+\textbullet{} HDFS
+\textbullet{} Ceph \\
+\textbullet{} Kafka
+\textbullet{} Graylog \\
+\textbullet{} InfluxDB
+\textbullet{} MongoDB \\
+\textbullet{} Ansible
+\textbullet{} Git \\
+\textbullet{} HTML 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{LG Ads}
+\descript{| Software Engineer }
+\location{June 2017 - June 2021 | Bangalore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Joined \textbf{Alphonso} {\footnotesize \textit{\textbf{(named LG Ads after an acquisition by LG) }}} as the $10^{th}$ engineer. Endowed with full responsibilities tackling critical scalability problems under a guidance of the Founders. As a TV data company, using its proprietary Automatic Content Recognition (ACR) to recognise Live TV feed in real time, my role was focused on scaling backend ACR services as outlined below.
+\item Refactored Live-TV feed database cache data structure, in \textbf{Node.js}, to \textbf{optimise ACR search}, providing \textbf{vertical scaling}.
+\item Redesigned critical Live-TV feed database deployment pipeline to scale across thousands of servers within a sub-second time, providing \textbf{horizontal scaling}.
+\item Efforts on horizontal and vertical scaling paid off enabling ACR services to scale from couple hundreds to few thousands servers with 5x improvement in latency.
+\item As a founding member of the Platform Engineering team, led a small team architecting key platform infrastructure projects \textemdash log collection pipeline with \textbf{Graylog} and \textbf{ElasticSearch}, application metrics collection and monitoring with \textbf{Telegraf} and \textbf{InfluxDB}, streamlined application deployment with \textbf{Docker} and \textbf{Kubernetes}, High-availability and Load-balancing of critical services with \textbf{HaProxy} and \textbf{Floating IPs}. Also built expertise on \textbf{Mesos}, \textbf{HDFS} and \textbf{Ceph} for \textbf{managing large scale distributed storage and compute cluster}.
+\item Setup \textbf{Machine Learning pipeline} based on \textbf{Kubeflow}, saving significant developer hours per week for the Data Science team.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Python Software Foundation}
+\descript{| Google Summer of Code }
+\location{April 2016 – August 2016}
+\begin{tightemize}
+\item Contributed to Coala \textemdash static code analysis FOSS \textemdash in \textbf{Python}, under Python Software Foundation. Developed "coala-html" application \textemdash \textbf{AngularJS} application to display results from Coala, as an interactive web page.
+\item Incorporated \textbf{test-driven development} with 97\% \textbf{code coverage} for AngularJS and 100\% for Python codebase, \textbf{test automation} and wrote \textbf{code documentation} as recommended software development practices. \href{https://github.com/coala/coala-html}{\underline {Github/coala-html}}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Europython}
+\descript{| Speaker}
+\location{July 2016 | Bilbao, Spain}
+\begin{tightemize}
+\item Conducted a 3hrs training session titled ”\textit{Guide to make an open source contribution}”, using \textbf{Git}, \textbf{CI/CD} pipeline at EuroPython — an annual International Python Conference in Europe. Participants made real time contributions to coala project. \href{https://tushar-rishav.github.io/EPGit/#/}{\underline {Slides.}}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Delta Club}
+\descript{| Student Software Developer}
+\location{July 2014 - May 2017 | NIT Trichy}
+\begin{tightemize}
+\item As a core member of \textbf{elite programming club}, collaborated on maintenance of the University website, development, administration and updating most of the contents on institute intranet.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Open Source Projects}
+\textbullet{} \href{https://gitlab.com/gitmate/open-source/IGitt}{\underline {IGitt}} and \href{https://gitlab.com/gitmate/open-source/gitmate-2}{\underline {GitMate}} {\footnotesize \textit{\textbf{(Contributor, 2016) }}} \textemdash GitMate provides automated code review and issue triaging for GitHub projects. IGitt as a backbone for GitMate, provides REST interface to access git hosting services eg GitHub. Contributed bug fixes and implemented new feature to predict bug rank for incoming patch using bug prediction algorithm BugSpot from Google \\
+\textbullet{} \href{https://github.com/ash7594/code-control/commits?author=tushar-rishav}{\underline {Code Control}} {\footnotesize \textit{\textbf{(Contributor, 2016) }}} \textemdash Online game, player writes program in Javascript to control a bot character in 2D grid with attack and defend strategies and defeat opponent player’s character to win the game. Game was live during \href{Pragyan}{https://pragyan.org/21/home/} 2016 - annual Tech Fest at NIT Trichy
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
