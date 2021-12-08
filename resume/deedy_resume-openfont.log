@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.25)  24 OCT 2021 17:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.25)  7 DEC 2021 21:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -643,10 +643,10 @@ Package rerunfilecheck Info: File `deedy_resume-openfont.out' has not changed.
 Here is how much of TeX's memory you used:
  12759 strings out of 476919
  244653 string characters out of 5821840
- 643079 words of memory out of 5000000
+ 642079 words of memory out of 5000000
  32565 multiletter control sequences out of 15000+600000
  404150 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 96i,11n,137p,776b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 96i,11n,137p,743b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on deedy_resume-openfont.pdf (1 page).
