@@ -1,4 +1,4 @@
-% !TEX program = xelatex
+%!TEX TS-program = xelatex
 % Intro Options
 \ProvidesClass{deedy-resume-openfont}[2014/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
