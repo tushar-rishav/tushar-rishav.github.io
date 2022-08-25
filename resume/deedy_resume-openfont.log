@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.25)  1 AUG 2022 20:51
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.8.25)  16 NOV 2022 02:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -628,9 +628,9 @@ LaTeX Font Warning: Font shape `TU/Raleway-Medium(0)/b/it' undefined
 (Font)              using `TU/Raleway-Medium(0)/m/n' instead on input line 54.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 68.
+(Font)              <7> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 68.
+(Font)              <5> on input line 63.
 [1
 
 ] (./deedy_resume-openfont.aux)
@@ -638,15 +638,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `deedy_resume-openfont.out' has not changed.
-(rerunfilecheck)             Checksum: AC178A958F47ECB185775F08C7B46CE1;987.
+(rerunfilecheck)             Checksum: AA938F0FA3CC4A7C0D48E9500C4E17AA;877.
  ) 
 Here is how much of TeX's memory you used:
  12759 strings out of 476919
  244653 string characters out of 5821840
- 645019 words of memory out of 5000000
+ 643897 words of memory out of 5000000
  32565 multiletter control sequences out of 15000+600000
  404150 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 96i,11n,137p,743b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 96i,11n,137p,650b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on deedy_resume-openfont.pdf (1 page).
