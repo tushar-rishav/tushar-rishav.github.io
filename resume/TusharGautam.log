@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.16)  4 NOV 2024 23:43
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.16)  6 DEC 2024 12:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -763,10 +763,10 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 44.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/sc' will be
 (Font)              scaled to size 12.0pt on input line 44.
- (./sections/objective.tex
+ (./sections/objective.tex) (./sections/industry_experience.tex
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 7.
-) (./sections/industry_experience.tex
+(Font)              scaled to size 10.0pt on input line 4.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hfill' on input line 4.
@@ -818,6 +818,6 @@ Here is how much of TeX's memory you used:
  38105 multiletter control sequences out of 15000+600000
  561643 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 140i,11n,135p,731b,392s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 140i,11n,135p,692b,392s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on TusharGautam.pdf (1 page).
