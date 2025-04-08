@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.16)  10 MAR 2025 23:23
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.16)  4 APR 2025 18:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -771,20 +771,20 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hfill' on input line 4.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hfill' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hfill' on input line 24.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hfill' on input line 31.
+
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 15.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 17.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 28.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 38.
-
+(Font)              scaled to size 10.0pt on input line 34.
 ) (./sections/patent.tex) (./sections/education.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -808,20 +808,13 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-Package rerunfilecheck Warning: File `TusharGautam.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `TusharGautam.out':
-(rerunfilecheck)             Before: 8D35DC4AB0BB55E3F82810AF903C9410;3655
-(rerunfilecheck)             After:  EE499235B9DDD34B3023418D48600E33;3665.
+Package rerunfilecheck Info: File `TusharGautam.out' has not changed.
+(rerunfilecheck)             Checksum: EE499235B9DDD34B3023418D48600E33;3665.
  ) 
 Here is how much of TeX's memory you used:
  16234 strings out of 474773
  319973 string characters out of 5757724
- 1953839 words of memory out of 5000000
+ 1952839 words of memory out of 5000000
  38105 multiletter control sequences out of 15000+600000
  561643 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
