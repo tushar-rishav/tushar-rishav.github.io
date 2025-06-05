@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.16)  4 APR 2025 18:14
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.3.16)  6 JUN 2025 11:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -781,11 +781,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 31.
+(hyperref)                removing `\hfill' on input line 33.
 
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 34.
-) (./sections/patent.tex) (./sections/education.tex
+(Font)              scaled to size 10.0pt on input line 36.
+) (./sections/skills.tex) (./sections/patent.tex) (./sections/education.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\hfill' on input line 2.
@@ -796,11 +796,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ) (./sections/courses.tex) (./sections/project.tex)
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 63.
+(Font)              scaled to size 24.88pt on input line 66.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 63.
+(Font)              scaled to size 24.88pt on input line 66.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 63.
+(Font)              scaled to size 14.4pt on input line 66.
  [1
 
 ] (./TusharGautam.aux)
@@ -809,13 +809,13 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `TusharGautam.out' has not changed.
-(rerunfilecheck)             Checksum: EE499235B9DDD34B3023418D48600E33;3665.
+(rerunfilecheck)             Checksum: 4A8462711797F00B0407D0DFD1C194FB;3777.
  ) 
 Here is how much of TeX's memory you used:
- 16234 strings out of 474773
- 319973 string characters out of 5757724
- 1952839 words of memory out of 5000000
- 38105 multiletter control sequences out of 15000+600000
+ 16241 strings out of 474773
+ 320150 string characters out of 5757724
+ 1954839 words of memory out of 5000000
+ 38110 multiletter control sequences out of 15000+600000
  561643 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  140i,11n,135p,692b,392s stack positions out of 10000i,1000n,20000p,200000b,200000s
